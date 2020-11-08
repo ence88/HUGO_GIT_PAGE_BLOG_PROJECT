@@ -10,6 +10,7 @@ tags:
 keywords:
 - tech
 #thumbnailImage: //example.com/image.jpg
+draft: true
 ---
 
 <!--more-->

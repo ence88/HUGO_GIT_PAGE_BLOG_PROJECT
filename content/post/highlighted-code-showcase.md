@@ -10,6 +10,7 @@ tags:
   - test
 thumbnailImagePosition: left
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg
+draft: true
 ---
 
 Tranquilpeak Hugo theme have its own theme to highlight source code. It's based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
@@ -240,7 +241,7 @@ namespace foo {
       printf("Formatted string %d\n\g", localVar[0]);
       printf(R"**(Formatted raw-string %d\n)**", 1);
       std::cout << (1 << 2) << std::endl;
-
+    
     #define FOO(A) A
     #ifdef DEBUG
       printf("debug");
@@ -379,10 +380,10 @@ import java.util.Date;
  */
 @Annotation (name=value)
 public class SomeClass<T extends Runnable> { // some comment
-  private T field = null;
-  private double unusedField = 12345.67890;
-  private UnknownType anotherString = "Another\nStrin\g";
-  public static int staticField = 0;
+    private T field = null;
+    private double unusedField = 12345.67890;
+    private UnknownType anotherString = "Another\nStrin\g";
+    public static int staticField = 0;
 
   public SomeClass(AnInterface param, int[] reassignedParam) {
     int localVar = "IntelliJ"; // Error, incompatible types
@@ -510,18 +511,18 @@ http {
 
     send_timeout 3m;
     client_header_buffer_size 1k;
-
+    
     gzip on;
     gzip_min_length 1100;
-
+    
     #lingering_time 30;
-
+    
     server {
         server_name   one.example.com  www.one.example.com;
         access_log   /var/log/nginx.access_log  main;
-
+    
         rewrite (.*) /index.php?page=$1 break;
-
+    
         location / {
             proxy_pass         http://127.0.0.1/;
             proxy_redirect     off;
@@ -529,11 +530,11 @@ http {
             proxy_set_header   X-Real-IP        $remote_addr;
             charset            koi8-r;
         }
-
+    
         location /api/ {
             fastcgi_pass 127.0.0.1:9000;
         }
-
+    
         location ~* \.(jpg|jpeg|gif)$ {
             root         /spool/www;
         }
