@@ -76,3 +76,9 @@ Input Parameters:
 Return values: The decision to return a future was based primarily on the ability to chain multiple continuations using `.then()`. This benefit of composability gives the programmer incredible control and flexibility over their code. Returning a `future` object rather than a `shared_future` is also a much cheaper operation thereby improving performance. A `shared_future` object is not necessary to take advantage of the chaining feature. It is also easy to go from a `future` to a `shared_future` when needed using future::share().
 
 반환 값 : 미래를 반환하기로 한 결정은 주로를 사용하여 여러 연속을 연결하는 기능에 기반 합니다. 이러한 구성 가능성의 이점은 프로그래머에게 코드에 대한 놀라운 제어와 유연성을 제공합니다. a 가 아닌 객체를 반환하는 것도 훨씬 저렴한 작업이므로 성능이 향상됩니다. 개체는 체인 기능을 활용할 필요가 없습니다. 또한 future :: share ()를 사용하여 필요할 때 a 에서 a 로 쉽게 이동할 수 있습니다.
+
+
+
+### 결론
+
+std::future에는 없는 기능으로 then을 활용 할 경우 블락이 걸리지 않기 때문에 서버 성능에 이점이 있습니다.
