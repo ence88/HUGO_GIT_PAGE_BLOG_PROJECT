@@ -1,0 +1,10 @@
+baseURL = "https://ence88.github.io/"
+languageCode = "ko-kr"
+defaultContentLanguage = "en-us"
+title = "The Game Server Developer"
+theme = "tranquilpeak"
+disqusShortname = "ence88-github-io.disqus.com"
+
+[author]
+    name = "Choi Jun-Han"
+    email = "ence88@gmail.com"
