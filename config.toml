@@ -31,7 +31,7 @@ canonifyurls = true
   archive = "archives"
 
 [author]
-  name = "Jun-Han Choi"
+  name = "Game Server Developer"
   bio = "Making online multi-user games"
   job = "Developer"
   location = "South Korea"
