@@ -5,7 +5,7 @@ echo 'deploying'
 # commit source and push to github
 git add -A
 git commit -m 'update'
-git push origin source
+git push origin
 
 # build public folder
 hugo
