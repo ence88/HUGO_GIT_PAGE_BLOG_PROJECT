@@ -8,4 +8,3 @@ used hugo(golang) full project for git page bloging
 - build -> hugo
 - local start -> hugo server
 - new post -> hugo new post/filename.md
-

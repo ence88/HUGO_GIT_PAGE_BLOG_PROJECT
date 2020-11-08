@@ -22,6 +22,12 @@ disqusShortname = "ence88-github-io"
 paginate = 7
 canonifyurls = true
 
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+
 [permalinks]
   post = "/:year/:month/:slug/"
 
@@ -58,7 +64,7 @@ canonifyurls = true
 #  name = "Search"
 #  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
 #  url = "/#search"
-#  class = "st-search-show-outputs"
+#  class = "open-algolia-search"
 [[menu.main]]
   weight = 3
   identifier = "categories"
