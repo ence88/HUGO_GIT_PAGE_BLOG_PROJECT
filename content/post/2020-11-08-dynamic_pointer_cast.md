@@ -23,13 +23,11 @@ keywords:
 #thumbnailImage: //example.com/image.jpg
 ---
 
-shard_ptr을 다룰때의 동적 캐스팅 방법
-
-<!--more-->
-
 ## shard_ptr 다운, 업 캐스팅
 
 `dynamic_pointer_cast`, `static_pointer_cast` 및 `const_pointer_cast`를 사용하여 `shared_ptr`을 캐스팅할 수 있습니다. 이러한 함수는 **`dynamic_cast`** , **`static_cast`** 및 연산자와 유사 **`const_cast`** 합니다. 다음 예제에서는 기본 클래스에서 `shared_ptr`의 벡터에 있는 각 요소의 파생 형식을 테스트한 다음 요소를 복사하고 이에 대한 정보를 표시하는 방법을 보여 줍니다.
+
+<!--more-->
 
 C++복사
 
