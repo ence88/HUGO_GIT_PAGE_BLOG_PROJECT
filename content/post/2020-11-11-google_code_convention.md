@@ -90,7 +90,6 @@ https://google.github.io/styleguide/cppguide.html
 
 - 한 줄 길이
     100 컬럼(탭 사이즈가 4 컬럼이기 때문입니다)
-    
 
 - 약어
 
