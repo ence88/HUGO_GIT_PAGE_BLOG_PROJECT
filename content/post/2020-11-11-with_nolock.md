@@ -23,7 +23,7 @@ keywords:
 #thumbnailImage: //example.com/image.jpg
 ---
 
-MSSQL은 기본적으로 SELECT 시에 공유잠금(TRANSACTION ISOLATION READ COMMIT)이 걸린다. 
+MSSQL은 기본적으로 SELECT 시에 공유잠금(TRANSACTION ISOLATION READ COMMIT)이 걸리게 됩니다.
 
 MSSQL에서 SELECT 시에 **WITH (NOLOCK)** 을 주면 공유잠금을 걸지 않고 바로 조회 수행합니다.
 
@@ -34,7 +34,9 @@ SELECT * FROM TABLE1 WITH (NOLOCK)
 
 <!--more-->
 
-SELECT 문이 수행되는 테이블에 대해서 INSERT, UPDATE, DELETE 문이 수행되고 있다면 SELECT문은 선행 작업이 모두 끝날때까지 LOCK이 걸립니다. 이때 SELECT 문에 WITH (NOLOCK)을 추가하면 선행작업의 결과와 관계없이 바로 SELECT문이 수행되어서 결과를 반환하게 됩니다.
+SELECT 문이 수행되는 테이블에 대해서 INSERT, UPDATE, DELETE 문이 수행되고 있다면 SELECT문은 선행 작업이 모두 끝날때까지 LOCK이 걸립니다.
+
+이때 SELECT 문에 WITH (NOLOCK)을 추가하면 선행작업의 결과와 관계없이 바로 SELECT문이 수행되어서 결과를 반환하게 됩니다.
 
 SELECT 문장에서 여러 테이블을 조인해서 가져오는 경우 WITH (NOLOCK)을 사용하기 위해서는 모든 테이블에 적어주어야 합니다.
 ```mssql
@@ -52,7 +54,7 @@ SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
 
 
 
-사용예
+사용 예시
 
 ```mssql
 CREATE PROCEDURE 프로시저명
