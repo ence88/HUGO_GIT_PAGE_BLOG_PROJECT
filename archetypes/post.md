@@ -1,9 +1,10 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-#Dev, C++
+#Dev, C++, DB, MsSQL, MySQL, Common
 categories:
 - None
+#C++, DB, MsSQL, MySQL
 tags:
 - None
 keywords:
