@@ -3,10 +3,12 @@ title: "Perforce의 Time Lapse View (SVN의 Blame)"
 date: 2020-11-11T21:57:54+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce
 categories:
-- None
+- Dev
+- Perforce
 #C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management
 tags:
-- None
+- Management
+- Perforce
 keywords:
 - tech
 - developer
