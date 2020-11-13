@@ -4,7 +4,7 @@ date: {{ .Date }}
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce
 categories:
 - None
-#C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management
+#C++, Mordern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management
 tags:
 - None
 keywords:
