@@ -9,7 +9,7 @@ tags:
 - C++
 - Future
 - Boost
-- Mordern C++
+- Modern C++
 keywords:
 - tech
 - developer
