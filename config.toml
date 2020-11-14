@@ -38,8 +38,8 @@ enableRobotsTXT = true
   archive = "archives"
 
 [author]
-  name = "Game Server Developer"
-  bio = "Making online multi-user games"
+  name = "Developing life"
+  bio = "다시 보기 위한 공간입니다."
   job = "Developer"
   location = "South Korea"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
