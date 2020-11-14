@@ -4,7 +4,7 @@ date: {{ .Date }}
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
 - None
-#C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo
+#C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
 - None
 keywords:
