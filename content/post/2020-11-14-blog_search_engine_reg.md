@@ -31,9 +31,7 @@ Google이나 Naver에 블로그나 사이트를 노출시키기 위해서는 검
 <!--more-->
 
 #### 필요 파일 생성
-
 ​	사이트 등록에는 robots.txt, sitemap.xml 두 파일이 필요합니다.
-
 ​	Hugo에서는 `config.toml` 파일에 해당 파일 생성을 명시 후 build를 진행하면 public 폴더에 생성 해줍니다.
 
 ```
