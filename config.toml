@@ -18,7 +18,7 @@ defaultContentLanguage = "en-us"
 title = "The Game Server Developer"
 theme = "tranquilpeak"
 disqusShortname = "ence88-github-io"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-183004637-2"
 paginate = 7
 canonifyurls = true
 
