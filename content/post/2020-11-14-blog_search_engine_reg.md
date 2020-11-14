@@ -66,7 +66,7 @@ enableRobotsTXT = true
 
 #### Naver에 노출시키는 법
 
-- [네이버 웹마스터](https://searchadvisor.naver.com/console/wmt/board)에 접속합니다.
+- [네이버 웹마스터](https://searchadvisor.naver.com/)에 접속합니다.
 - `url`을 등록하고 소유권을 확인한다(`html` 파일 `public`에 저장, `push`, 확인). 업로드 후 보안문자를 입력하면 소유권 확인 메세지가 확인됩니다.
 - 로봇룰 검증을 실시합니다
   - 연동 사이트 목록에서 등록한 블로그 주소를 클릭합니다.
@@ -75,10 +75,14 @@ enableRobotsTXT = true
 
 - sitemap, RSS xml 제출
   - 웹마스터 페이지 - 왼쪽에 **요청** 메뉴 - 사이트맵 제출(or RSS 제출)`에서 `sitemap.xml`(or `feed.xml`)을 입력합니다.
+  
   - 블로그에 만들어져 있는 RSS 버튼을 클릭하면 나오는 주소/filename.xml을 등록합니다.
+  
   - sitemap 제출할 때는 `sitemap.xml`만 입력하지만, RSS 제출할 때는 `http`부터 `xml` 파일명까지 통째로 입력해야 합니다.
+  
+    
 
-#### Daum
+#### Daum에 노출시키는 법
 
 - [Daum 검색등록 페이지](https://register.search.daum.net/index.daum)로 이동합니다.
 - 블로그 등록 옵션을 눌러 블로그 주소를 입력합니다.(http, https 구분 x).
