@@ -5,6 +5,7 @@ date: 2020-11-14T22:08:35+09:00
 categories:
 - Dev
 - DB
+- MsSQL
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
 - DB

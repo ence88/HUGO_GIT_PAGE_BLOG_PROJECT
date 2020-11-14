@@ -5,6 +5,7 @@ date: 2020-11-11T21:13:26+09:00
 categories:
 - Dev
 - DB
+- MsSQL
 tags:
 - DB
 - MsSQL
