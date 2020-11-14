@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-#Dev, C++, DB, MsSQL, MySQL, Common, Perforce
+#Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
 - None
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo

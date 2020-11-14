@@ -4,7 +4,7 @@ date: 2020-11-14T12:19:25+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce
 categories:
 - Dev
-- Common
+- Blog
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management
 tags:
 - Blog
