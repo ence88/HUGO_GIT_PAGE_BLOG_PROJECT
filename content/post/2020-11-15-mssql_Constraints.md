@@ -1,5 +1,5 @@
 ---
-title: "Mssql 무결성 강제 적용(제약조건) PRIMARY KEY 및 FOREIGN KEY"
+title: "MsSQL 무결성 강제 적용(제약조건) PRIMARY KEY 및 FOREIGN KEY"
 date: 2020-11-15T13:39:43+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:

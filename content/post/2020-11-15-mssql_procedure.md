@@ -1,5 +1,5 @@
 ---
-title: "Mssql Procedure 프로시저"
+title: "MsSQL Procedure 프로시저"
 date: 2020-11-15T15:29:56+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:

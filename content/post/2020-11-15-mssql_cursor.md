@@ -1,7 +1,7 @@
 ---
 
 
-title: "Mssql Cursor"
+title: "MsSQL Cursor"
 date: 2020-11-15T15:17:47+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
