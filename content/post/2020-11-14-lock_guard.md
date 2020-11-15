@@ -3,10 +3,12 @@ title: "std::lock_guard"
 date: 2020-11-14T22:48:24+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- None
+- Dev
+- C++
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
-- None
+- C++
+- std
 keywords:
 - tech
 - developer
