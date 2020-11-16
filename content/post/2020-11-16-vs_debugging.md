@@ -23,6 +23,12 @@ keywords:
 #thumbnailImage: //example.com/image.jpg
 ---
 
+**디버그 코드 변경 내용 적용 ALT + F10**
+
+편집하며 계속하기를 시작하여 디버그 중인 코드에 변경 내용을 적용합니다.
+
+
+
 <!--more-->
 
 **스코프를 벗어난 객체 주시하기**
