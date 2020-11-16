@@ -45,6 +45,57 @@ keywords:
 
 
 
+**디버거 내장 함수를 사용하여 상태 유지**
+
+디버거 내장 함수는 애플리케이션의 상태를 변경하지 않고 식에서 특정 C/C++ 함수를 호출하는 방법을 제공합니다.
+
+디버거 내장 함수의 특징은 다음과 같습니다.
+
+- 안전이 보장됩니다. 디버거 내장 함수를 실행하는 경우 디버깅 중인 프로세스가 손상되지 않습니다.
+
+- 모든 식에서 허용됩니다. 파생 작업과 함수 실행이 허용되지 않는 시나리오에서도 허용됩니다.
+
+- 미니덤프 디버깅과 같이 일반 함수 호출이 가능하지 않은 시나리오에서 작동합니다.
+
+  디버거 내장 함수를 사용하면 식 계산도 보다 편리해질 수 있습니다. 예를 들어 `strncmp(str, "asd")` 는 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`보다 중단점 조건에서 작성하기가 훨씬 쉽습니다. )
+
+| 영역            | 내장 함수                                                    |
+| :-------------- | :----------------------------------------------------------- |
+| **문자열 길이** | [strlen, wcslen](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strnlen-strnlen-s) |
+| **문자열 비교** | [strcmp, wcscmp](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l) |
+| **문자열 검색** | [strchr, wcschr](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/ko-kr/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l) |
+| **Win32**       | [CoDecodeProxy](https://docs.microsoft.com/ko-kr/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/ko-kr/previous-versions/bb432242(v=vs.85)), [GetLastError](https://docs.microsoft.com/ko-kr/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/ko-kr/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) |
+| **Windows 8**   | [RoInspectCapturedStackBackTrace](https://docs.microsoft.com/ko-kr/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/ko-kr/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/ko-kr/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/ko-kr/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)  이러한 함수를 사용하려면 디버깅 중인 프로세스가 Windows 8에서 실행되어야 합니다. Windows 8 디바이스에서 생성된 덤프 파일을 디버깅하려면 Visual Studio 컴퓨터에서 Windows 8이 실행되어야 합니다. 그러나 Windows 8 디바이스를 원격으로 디버그하는 경우에는 Visual Studio 컴퓨터에서 Windows 7이 실행될 수 있습니다. |
+| **기타**        | __log2 // 가장 가까운 낮은 정수로 반올림된 밑이 2인 지정된 정수의 로그 값을 반환합니다.  __findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength  Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx  ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] 및 operator(index<>)  ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)  ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] 및 operator(tiled_index<>)  ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] 및 operator(index<>)  ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)  ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] 및 operator(tiled_index<>)  TreeTraverse_Init // 새 트리 순회를 초기화합니다.  TreeTraverse_Next // 트리의 노드를 반환합니다.  TreeTraverse_Skip // 보류 중인 트리 순회의 노드를 건너뜁니다. |
+
+C++/CLI - 지원되지 않는 식
+
+- 포인터와 관련된 캐스트 또는 사용자 정의 캐스트는 지원되지 않습니다.
+- 개체 비교 및 할당은 지원되지 않습니다.
+- 오버로드된 연산자 및 오버로드된 함수는 지원되지 않습니다.
+- boxing 및 unboxing은 지원되지 않습니다.
+- `Sizeof` 연산자는 지원되지 않습니다.
+
+
+
+**교착 상태 및 경합 상태 디버그**
+
+다중 스레드 앱에 공통적인 문제 유형을 디버그해야 하는 경우 디버그하는 동안 스레드의 위치를 확인하는 것이 도움이 되는 경우가 많습니다. **소스의 스레드 표시** 단추를 사용하여 이 작업을 쉽게 수행할 수 있습니다.
+
+소스 코드에서 스레드를 표시하려면
+
+1. 디버그하는 동안 **디버그 도구** 모음에서 **소스의 스레드 표시** 단추 ![소스의 스레드 표시](https://docs.microsoft.com/ko-kr/visualstudio/debugger/media/dbg-multithreaded-show-threads.png?view=vs-2019)를 클릭합니다.
+
+2. 창 왼쪽의 여백을 확인합니다. 이 줄에는 실 두 가닥 모양의 스레드 마커 아이콘 ![스레드 마커](https://docs.microsoft.com/ko-kr/visualstudio/debugger/media/dbg-thread-marker.png?view=vs-2019)이 표시됩니다. 스레드 마커는 이 위치에서 스레드가 중지되었음을 나타냅니다.
+
+   스레드 마커는 중단점에 의해 일부가 가려질 수 있습니다.
+
+3. 스레드 마커에 포인터를 올려 놓습니다. DataTips가 나타납니다. DataTip을 통해 중지된 각 스레드의 이름과 스레드 ID 번호를 알 수 있습니다.
+
+   [병렬 스택](https://docs.microsoft.com/ko-kr/visualstudio/debugger/get-started-debugging-multithreaded-apps?view=vs-2019) 창에서도 스레드 위치를 볼 수 있습니다.
+
+
+
 **스코프를 벗어난 객체 주시하기**
 
 디버깅을 하다 보면 스코프를 벗어난 객체를 계속 주시하고 싶을 때가 있습니다. 하지만 비쥬얼 스튜디오의 조사식 창(Watch Window)에서는 입력한 객체가 스코프를 벗어나면 비활성화가 되어 더이상 값을 확인 할수 없게 되어버리죠. 이 때, 조사식에 주시 하고픈 객체의 포인터를 입력하면, 해당 객체가 스코프를 벗어났더라도 (해당 객체가 살아 있다면) 지속적으로 값을 확인할 수 있습니다.
