@@ -3,7 +3,7 @@ title: "스마트한 shared_ptr 스마트하게 지우는 법"
 date: 2020-11-14T21:31:48+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
+- Language
 - C++
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:

@@ -3,7 +3,7 @@ title: "std upper_bound"
 date: 2020-11-08T23:22:20+09:00
 #Dev, C++
 categories:
-- Dev
+- Language
 - C++
 tags:
 - c++

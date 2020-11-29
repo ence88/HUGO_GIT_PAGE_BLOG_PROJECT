@@ -3,7 +3,7 @@ title: "Boost Future의 continuations(연속 연결)"
 date: 2020-11-08T23:31:17+09:00
 #Dev, C++
 categories:
-- Dev
+- Language
 - C++
 tags:
 - C++

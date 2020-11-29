@@ -3,7 +3,7 @@ title: "std::atomic, memory_order"
 date: 2020-11-09T21:45:07+09:00
 #Dev, C++
 categories:
-- Dev
+- Language
 - C++
 tags:
 - C++

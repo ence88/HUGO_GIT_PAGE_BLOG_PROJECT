@@ -3,7 +3,7 @@ title: "MsSQL Merge문"
 date: 2020-11-14T21:19:54+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
+- DB
 - MsSQL
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:

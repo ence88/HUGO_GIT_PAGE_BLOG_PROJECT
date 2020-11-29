@@ -3,8 +3,7 @@ title: "Hugo 블로그 검색 엔진에 등록하기"
 date: 2020-11-14T12:19:25+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce
 categories:
-- Dev
-- Blog
+- Common
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management
 tags:
 - Blog

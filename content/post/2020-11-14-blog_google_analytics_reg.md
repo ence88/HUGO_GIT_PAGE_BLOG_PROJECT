@@ -3,8 +3,7 @@ title: "Hugo 블로그에 Google Analytics 연결"
 date: 2020-11-14T13:50:07+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce
 categories:
-- Dev
-- Blog
+- Common
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo
 tags:
 - Blog

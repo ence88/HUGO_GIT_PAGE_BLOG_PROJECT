@@ -3,7 +3,6 @@ title: "MsSQL with nolock"
 date: 2020-11-11T21:13:26+09:00
 #Dev, C++
 categories:
-- Dev
 - DB
 - MsSQL
 tags:

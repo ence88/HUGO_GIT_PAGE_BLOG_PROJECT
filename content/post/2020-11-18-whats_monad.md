@@ -3,7 +3,6 @@ title: "모나드(Monad)란 무엇인가?"
 date: 2020-11-18T21:43:34+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
 - Common
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:

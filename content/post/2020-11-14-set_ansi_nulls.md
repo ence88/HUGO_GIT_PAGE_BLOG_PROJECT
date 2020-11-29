@@ -3,7 +3,7 @@ title: "MsSQL SET ANSI_NULLS ON|OFF"
 date: 2020-11-14T22:00:20+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
+- DB
 - MsSQL
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:

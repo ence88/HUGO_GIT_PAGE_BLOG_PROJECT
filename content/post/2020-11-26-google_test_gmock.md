@@ -3,8 +3,8 @@ title: "UnitTesting 관련 Google Test, gMock 정리"
 date: 2020-11-26T18:33:54+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
-- Common
+- Language
+- C++
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
 - C++

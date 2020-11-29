@@ -3,7 +3,6 @@ title: "C++ Google Coding Convention Style 정리"
 date: 2020-11-11T21:25:16+09:00
 #Dev, C++
 categories:
-- Dev
 - Common
 tags:
 - C++

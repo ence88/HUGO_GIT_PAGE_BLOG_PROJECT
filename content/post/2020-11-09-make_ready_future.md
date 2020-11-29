@@ -3,7 +3,7 @@ title: "boost::make_ready_future"
 date: 2020-11-09T21:09:42+09:00
 #Dev, C++
 categories:
-- Dev
+- Language
 - C++
 tags:
 - C++

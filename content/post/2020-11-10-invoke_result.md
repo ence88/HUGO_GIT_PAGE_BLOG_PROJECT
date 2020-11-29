@@ -3,7 +3,7 @@ title: "std::invoke_result 클래스"
 date: 2020-11-10T21:44:03+09:00
 #Dev, C++
 categories:
-- Dev
+- Language
 - C++
 tags:
 - C++

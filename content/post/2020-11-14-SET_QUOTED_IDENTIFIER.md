@@ -3,7 +3,6 @@ title: "MsSQL SET QUOTED_IDENTIFIER ON|OFF"
 date: 2020-11-14T22:08:35+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
 - DB
 - MsSQL
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture

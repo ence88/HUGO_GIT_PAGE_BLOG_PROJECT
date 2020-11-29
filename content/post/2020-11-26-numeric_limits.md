@@ -3,7 +3,7 @@ title: "C++ 변수 타입 최대 최소값 편리하게 확인하는 방법 std:
 date: 2020-11-26T12:31:52+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
+- Language
 - C++
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:

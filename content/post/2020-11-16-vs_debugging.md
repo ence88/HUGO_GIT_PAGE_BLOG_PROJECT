@@ -3,7 +3,6 @@ title: "visual studio 디버깅 팁"
 date: 2020-11-16T21:30:53+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
-- Dev
 - Common
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
