@@ -32,7 +32,7 @@ MsSQL에서 identity 옵션은 MySQL의 auto increment 옵션과 같습니다. (
 
 # identity
 
-```mssql
+```sql
 -- 테이블 생성시
 CREATE TABL]E (
 
@@ -81,7 +81,7 @@ INSERT INTO testTB (name) value('이름'); -- 자동으로 id 지정됨
 
 ### 구문
 
-```mssql
+```sql
 CREATE SEQUENCE [schema_name . ] sequence_name  
     [ AS [ built_in_integer_type | user-defined_integer_type ] ]  
     [ START WITH <constant> ]  

@@ -32,7 +32,7 @@ MERGE문은 여러 개의 개별 DML문을 단일 쿼리로 대체할 수 있고
 
 사용예
 
-```mssql
+```sql
 MERGE 변경될테이블명 AS A
 	USING 기준테이블명 AS B
 	ON A.컬럼명 = B.컬럼명
@@ -48,7 +48,7 @@ MERGE 변경될테이블명 AS A
 
 또한, MATCHED, NOT MATCHED와 함께 추가 조건 지정도 가능합니다.
 
-```mssql
+```sql
 MERGE 변경될테이블명 AS A
 	USING (SELECT 컬럼명 FROM 기준테이블명) AS B
 	ON (A.컬럼명 = B.컬럼명 AND A.컬럼명 = B.컬럼명)

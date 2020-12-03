@@ -36,7 +36,7 @@ keywords:
 
 ### 커서 선언
 
-```
+```sql
 --커서 생성
 DECLARE   CursorEmail   CURSOR  
 FOR SELECT Email from tblUserTable where IsDelete = 'False'
@@ -81,7 +81,7 @@ Deallocate CursorEmail;
 
 ### FETCH 구문
 
-```syntaxsql
+```sql
 FETCH   
           [ [ NEXT | PRIOR | FIRST | LAST   
                     | ABSOLUTE { n | @nvar }   

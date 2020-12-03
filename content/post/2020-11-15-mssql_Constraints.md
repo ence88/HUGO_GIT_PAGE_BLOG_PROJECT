@@ -34,7 +34,9 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 
 테이블에 대해 기본 키 제약 조건을 지정하면 데이터베이스 엔진 은 기본 키 열에 대해 고유 인덱스를 자동으로 만들어 데이터 고유성을 적용합니다. 또한 쿼리에서 기본 키가 사용되는 경우 이 인덱스를 사용하여 데이터에 빠르게 액세스할 수 있습니다. 기본 키 제약 조건이 두 개 이상의 열에 정의되는 경우 한 열에 중복된 값이 있을 수 있지만 기본 키 제약 조건 정의에 있는 모든 열의 값 조합은 각각 고유해야 합니다.
 
-다음 그림에서와 같이 **Purchasing.ProductVendor** 테이블의 **ProductID** 및 **VendorID** 열은 이 테이블에 대한 복합 기본 키 제약 조건을 구성합니다. 그 결과 **ProductVendor** 테이블의 모든 열에서 **ProductID**와 **VendorID**의 조합은 고유합니다. 따라서 중복 행을 삽입할 수 없습니다.
+다음 그림에서와 같이 **Purchasing.ProductVendor** 테이블의 **ProductID** 및 **VendorID** 열은 이 테이블에 대한 복합 기본 키 제약 조건을 구성합니다. 그 결과 **Pr**
+
+**oductVendor** 테이블의 모든 열에서 **ProductID**와 **VendorID**의 조합은 고유합니다. 따라서 중복 행을 삽입할 수 없습니다.
 
 ![복합 PRIMARY KEY 제약 조건](https://docs.microsoft.com/ko-kr/sql/relational-databases/tables/media/fund04.gif?view=sql-server-ver15)
 

@@ -26,7 +26,7 @@ keywords:
 
 #### 구문
 
-```mssql
+```sql
 -- Syntax for SQL Server
 
 SET ANSI_NULLS { ON | OFF }

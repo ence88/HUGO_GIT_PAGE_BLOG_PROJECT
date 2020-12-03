@@ -30,7 +30,7 @@ keywords:
 
 ## 구문
 
-```mssql
+```sql
 OBJECT_ID ( '[ database_name . [ schema_name ] . | schema_name . ]   
   object_name' [ ,'object_type' ] )  
 ```

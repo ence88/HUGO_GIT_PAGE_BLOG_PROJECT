@@ -26,7 +26,7 @@ keywords:
 
 #### 구문
 
-```mssql
+```sql
 -- Syntax for SQL Server, Azure SQL Database and SQL on-demand (preview) in Azure Synapse Analytics
 
 SET QUOTED_IDENTIFIER { ON | OFF }
