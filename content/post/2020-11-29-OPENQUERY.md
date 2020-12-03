@@ -32,7 +32,7 @@ MsSQL은 linked server라는 기능을 제공하는데, 이를 이용하면 물�
 
 \- MSSQL 연결된 서버 생성
 
-```mssql
+```sql
 EXEC sp_addlinkedserver
     @server = '[연결된 서버별칭]',
     @srvproduct = '',
@@ -44,7 +44,7 @@ EXEC sp_addlinkedserver
 
 \- MSSQL 연결계정 생성
 
-```mssql
+```sql
 EXEC sp_addlinkedsrvlogin
     @rmtsrvname= '[연결된 서버별칭]',
     @useself= 'false',
@@ -69,7 +69,7 @@ SELECT * FROM master.sys.linked_logins WHERE remote_name = '[사용자 이름]'
 
 \- MSSQL 연결된 서버 사용 예시
 
-```mssql
+```sql
 --  연결된 서버를 등록한 후 사용하려면 [연결된 서버별칭].[데이터 베이스명].[데이터베이스 소유자명].[테이블명]
 --  형태로 호출하여 사용할 수 있습니다.
 --  SELECT 쿼리를 예로 들면 아래와 같습니다.
@@ -79,14 +79,14 @@ SELECT * FROM master.sys.linked_logins WHERE remote_name = '[사용자 이름]'
 
 \- MSSQL 연결된 서버에 SELECT 쿼리시
 
-```mssql
+```sql
 SELECT [컬럼명] FROM [연결된 서버별칭].[데이터 베이스명].[데이터베이스 소유자명].[테이블명] WHERE [조건절]
 ```
 
 
 - Openquery 활용
 
-  ``` mssql
+  ``` sql
   -- 'OpenQuery' 이용이 Linked Server를 이용하는 방식보다 빠르다.
   -- OpenQuery() 안의 내용은 varchar(8000) 까지이다.
   
