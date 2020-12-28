@@ -102,7 +102,7 @@ enableRobotsTXT = true
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://github.com/ence88"
+  url = "https://github.com/ence2"
 [[menu.links]]
   weight = 3
   identifier = "instagram"
