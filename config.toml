@@ -91,12 +91,12 @@ enableRobotsTXT = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
   url = "/#about"
 
-[[menu.links]]
-  weight = 1
-  identifier = "mysite"
-  name = "MySite"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-address-card\"></i>"
-  url = "http://chjh.net/"
+#[[menu.links]]
+#  weight = 1
+#  identifier = "mysite"
+#  name = "MySite"
+#  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-address-card\"></i>"
+#  url = "http://chjh.net/"
 [[menu.links]]
   weight = 2
   identifier = "github"
