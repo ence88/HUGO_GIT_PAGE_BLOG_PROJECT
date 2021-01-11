@@ -61,10 +61,10 @@ enableRobotsTXT = true
   url = "/"
 [[menu.main]]
   weight = 2
-  identifier = "archive"
+  identifier = "tags"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/archive"
+  url = "/tags"
 [[menu.main]]
   weight = 3
   identifier = "categories"
@@ -73,10 +73,10 @@ enableRobotsTXT = true
   url = "/categories"
 [[menu.main]]
   weight = 4
-  identifier = "tags"
-  name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
-  url = "/tags"
+  identifier = "archive"
+  name = "Histories"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  url = "/archive"
 #[[menu.main]]
 #  weight = 5
 #  identifier = "search"
