@@ -40,6 +40,8 @@ keywords:
 
 
 
+
+
 ### static_cast
 
 정적 캐스트(static_cast) 의 특성은 이 묵시적 캐스트와 일차적으로 같다고 보면 됩니다.
@@ -79,6 +81,8 @@ char* cStyle = (char*)target; // 이것도 OK이지만, C 스타일 캐스트는
 
 
 
+
+
 ### reinterpret_cast
 
 reinterpret_cast는 어떠한 포인터 타입도 어떠한 포인터 타입으로든 변환이 가능합니다.
@@ -103,6 +107,8 @@ unsigned short Hash( void *p )
 	return ( unsigned short )( val ^ (val >> 16) ); 
 }
 ```
+
+
 
 
 
@@ -142,6 +148,8 @@ DerivedClass* pSDC = dynamic_cast<DerivedClass*>(pBC);
 	mov		dword ptr [ebp - 2Ch], eax
 */
 ```
+
+
 
 
 
@@ -225,6 +233,8 @@ static_cast는 동적 타입체크를 하지 않고, Student와 Teacher는 Perso
 다시 말해, 껍데기만 Doctor 클래스이지 내용은 전혀 Doctor의 것이 아니게 된다는 것입니다.
 이때 멤버 필드에 접근시 엉뚱한 값이 들어가 있거나, 런타임 오류가 발생할 수 있게 됩니다.
 위 예제를 잘 보고 언제 static_cast와 dynamic_cast를 구분해서 쓰는 게 좋은지 잘 이해해야 합니다.
+
+
 
 
 
