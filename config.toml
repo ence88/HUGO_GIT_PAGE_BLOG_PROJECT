@@ -65,7 +65,7 @@ enableRobotsTXT = true
   identifier = "archives"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/search"
+  url = "/archives"
 [[menu.main]]
   weight = 3
   identifier = "categories"
