@@ -83,12 +83,12 @@ enableRobotsTXT = true
 #  name = "temp"
 #  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
 #  url = "/search"
-[[menu.main]]
-  weight = 6
-  identifier = "about"
-  name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
+#[[menu.main]]
+#  weight = 6
+#  identifier = "about"
+#  name = "About"
+#  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+#  url = "/#about"
 
 #[[menu.links]]
 #  weight = 1
