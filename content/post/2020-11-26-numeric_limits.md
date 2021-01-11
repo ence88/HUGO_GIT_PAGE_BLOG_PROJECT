@@ -30,9 +30,9 @@ numeric_limits 클래스 템플릿은 템플릿 특수화로 구현되었고, �
 
 <!--more-->
 
+  
 
-
-```C++
+```cpp
 #include <limits>
 #include <iostream>
  

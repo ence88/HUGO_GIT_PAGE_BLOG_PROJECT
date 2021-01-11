@@ -33,23 +33,29 @@ keywords:
 
 <!--more-->
 
+  
+
+  
+
 #### #연산자
 
 **# 연산자는 매개변수를 문자화 하는 연산자 입니다.**
 
-```c++
+```cpp
 #define STRING(x) #x
 std::string test = STRING(123456);
 printf(test.c_str());
 ```
 
+  
 
+  
 
 #### ##연산자
 
 **##은 두 개의 토큰을 이어준다. 혹은 붙여준다.** 의 의미로 생각하시면 됩니다. 
 
-```c++
+```cpp
 #define INT_name_num(num)    int name##num;
 ```
 

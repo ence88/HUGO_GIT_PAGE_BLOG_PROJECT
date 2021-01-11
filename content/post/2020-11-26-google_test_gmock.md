@@ -43,7 +43,9 @@ keywords:
 5. 테스팅 프레임워크는 테스트 작성자들의 귀찮음을 덜어주고 테스트 자체에 집중할 수 있도록 만들어줍니다.  
 6. 테스트는 빨라야합니다. 구글테스트를 이용해서 shared resource를 테스트간에 재사용 할 수 있고, 한번만 실행되는 set-up/tear-down 메소드도 사용할 수 있습니다.  
 
+  
 
+  
 
 ### Assertion
 
@@ -52,25 +54,33 @@ Nonfatal assertion (EXPECT_) 는 테스트 실패해도 모든 테스트를 실�
 
 보통은 EXPECT_를 쓰나, 이 테스트가 실해하면 무조건 바로 중단해야 할 경우는 ASSERT_를 씁니다.
 
+  
 
+  
 
 ### Basic Assertion
 
 Fatal assertion | Nonfatal assertion | Verifies ————————– | ————————– | ——————– ASSERT_TRUE(condition); | EXPECT_TRUE(condition); | condition is true ASSERT_FALSE(condition); | EXPECT_FALSE(condition); | condition is false
 
+  
 
+  
 
 ### Binary Comparison
 
 Fatal assertion | Nonfatal assertion | Verifies ———————— | ———————— | ————– `ASSERT_EQ(val1, val2);` | `EXPECT_EQ(val1, val2);` | `val1 == val2` `ASSERT_NE(val1, val2);` | `EXPECT_NE(val1, val2);` | `val1 != val2` `ASSERT_LT(val1, val2);` | `EXPECT_LT(val1, val2);` | `val1 < val2` `ASSERT_LE(val1, val2);` | `EXPECT_LE(val1, val2);` | `val1 <= val2` `ASSERT_GT(val1, val2);` | `EXPECT_GT(val1, val2);` | `val1 > val2` `ASSERT_GE(val1, val2);` | `EXPECT_GE(val1, val2);` | `val1 >= val2`
 
+  
 
+  
 
 ### String Comparison
 
 | Fatal assertion | Nonfatal assertion | Verifies | | ————————– | —————————— | ——————————————————– | | `ASSERT_STREQ(str1,str2);` | `EXPECT_STREQ(str1,str2);` | the two C strings have the same content | | `ASSERT_STRNE(str1,str2);` | `EXPECT_STRNE(str1,str2);` | the two C strings have different contents | | `ASSERT_STRCASEEQ(str1,str2);` | `EXPECT_STRCASEEQ(str1,str2);` | the two C strings have the same content, ignoring case | | `ASSERT_STRCASENE(str1,str2);` | `EXPECT_STRCASENE(str1,str2);` | the two C strings have different contents, ignoring case
 
+  
 
+  
 
 ### Simple Test
 
@@ -78,7 +88,7 @@ Fatal assertion | Nonfatal assertion | Verifies ———————— | —�
 첫번째 파라미터는 test suite의 이름이고, 두번째 파라미터는 구체적인 테스트의 이름입니다.
 이름에는 underscores (_)가 들어갈 수 없습니다.
 
-```c++
+```cpp
 TEST(TestSuiteName, TestName) {
   ... test body ...
 }
@@ -86,7 +96,7 @@ TEST(TestSuiteName, TestName) {
 
 #### Example
 
-```c++
+```cpp
 // Tests factorial of 0.
 TEST(FactorialTest, HandlesZeroInput) {
   EXPECT_EQ(Factorial(0), 1);
@@ -101,14 +111,16 @@ TEST(FactorialTest, HandlesPositiveInput) {
 }
 ```
 
+  
 
+  
 
 ### Test Fixtures (Setup()/TearDown())
 
 같은 데이터 설정을 여러 테스트에서 사용하고 싶을 때 필요한 방법입니다. ::testing::Test를 상속받습니다. Setup()과 같은 메소드들은 protected로 정의합니다.
 또한 TEST() 대신 TEST_F()를 사용합니다.
 
-```c++
+```cpp
 TEST_F(TestFixtureName, TestName) {
   ... test body ...
 }
@@ -116,7 +128,7 @@ TEST_F(TestFixtureName, TestName) {
 
 #### Example
 
-```c++
+```cpp
 template <typename E>  // E is the element type.
 class Queue {
  public:
@@ -168,7 +180,7 @@ TEST_F(QueueTest, DequeueWorks) {
 
 gtest_main과 Link했다면 메인함수를 작성할 필요는 없습니다. gtest_main을 링크합니다면 구글 테스트가 메인 함수 기본 구현을 제공하기 때문입니다. 만약 자신만의 메인을 만들고 싶다면 RUN_ALL_TEST()를 리턴하게 해야 합니다.
 
-```c++
+```cpp
 #include "this/package/foo.h"
 #include "gtest/gtest.h"
 
@@ -232,7 +244,9 @@ int main(int argc, char **argv) {
 
 More Information [Advanced Guide](https://github.com/google/googletest/blob/master/googletest/docs/advanced.md)
 
+  
 
+  
 
 ### gMock이란?
 
@@ -248,11 +262,11 @@ More Information [Advanced Guide](https://github.com/google/googletest/blob/mast
 - [gMock Cookbook](https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md)
 - [gMock Chear Sheet](https://github.com/google/googletest/blob/master/googlemock/docs/cheat_sheet.md)
 
-
+  
 
 먼저 Mocking을 하기 전에 Mocking할 대상을 상속받는 클래스를 만들어야 합니다.
 
-```c++
+```cpp
 #include "gmock/gmock.h"
 
 class MockFoo : public Foo {
@@ -270,7 +284,7 @@ class MockFoo : public Foo {
 
 이제 Mocking 클래스를 사용해보겠습니다.
 
-```c++
+```cpp
 using ::testing::Return;                          // #1
 
 TEST(BarTest, DoesThis) {

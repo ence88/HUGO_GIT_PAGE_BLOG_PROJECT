@@ -38,7 +38,7 @@ iterator를 원하는 위치로 옮길 수 있는 함수이다. 컨테이너의 
 
 <!--more-->
 
-```C++
+```cpp
 std::vector<int> vec{1,2,3,4,5};
 auto it = vec.begin();
 std::advance(it, 1);
