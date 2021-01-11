@@ -29,7 +29,12 @@ Google이나 Naver에 블로그나 사이트를 노출시키기 위해서는 검
 
 <!--more-->
 
-#### 필요 파일 생성
+  
+
+  
+
+### 필요 파일 생성
+
 ​	사이트 등록에는 robots.txt, sitemap.xml 두 파일이 필요합니다.
 ​	Hugo에서는 `config.toml` 파일에 해당 파일 생성을 명시 후 build를 진행하면 public 폴더에 생성 해줍니다.
 
@@ -45,9 +50,11 @@ enableRobotsTXT = true
   priority = 0.5
 ```
 
+  
 
+  
 
-#### Google에 노출시키는 법
+### Google에 노출시키는 법
 
 - [Google Search Console](https://search.google.com/search-console/about?hl=ko)에 접속해서 **시작하기**를 누릅니다.
 
@@ -61,9 +68,12 @@ enableRobotsTXT = true
 
   - Google Search Console의 속성 페이지 왼쪽 메뉴에 **Sitemaps** 라는 게 있습니다. 이걸 클릭하면 `sitemap.xml` 파일을 등록할 수 있습니다. 등록할 때 해당 파일의 경로를 입력해야 합니다. **이 때** 주소 입력란에 “sitemap.xml"이라고 입력합니다. 
 
-    
 
-#### Naver에 노출시키는 법
+
+
+
+
+### Naver에 노출시키는 법
 
 - [네이버 웹마스터](https://searchadvisor.naver.com/)에 접속합니다.
 - `url`을 등록하고 소유권을 확인한다(`html` 파일 `public`에 저장, `push`, 확인). 업로드 후 보안문자를 입력하면 소유권 확인 메세지가 확인됩니다.
@@ -79,9 +89,12 @@ enableRobotsTXT = true
   
   - sitemap 제출할 때는 `sitemap.xml`만 입력하지만, RSS 제출할 때는 `http`부터 `xml` 파일명까지 통째로 입력해야 합니다.
   
-    
 
-#### Daum에 노출시키는 법
+  
+
+  
+
+### Daum에 노출시키는 법
 
 - [Daum 검색등록 페이지](https://register.search.daum.net/index.daum)로 이동합니다.
 - 블로그 등록 옵션을 눌러 블로그 주소를 입력합니다.(http, https 구분 x).

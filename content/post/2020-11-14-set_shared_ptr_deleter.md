@@ -32,9 +32,13 @@ shared_ptr 생성 시점에서 deleter를 전달 할 수 있고 이를 활용하
 
 <!--more-->
 
+  
+
+  
+
 shared_ptr의 생성자 함수는 크게 다음 세 가지 형태로 정의되어 있습니다.
 
-```c++
+```cpp
 constexpr shared_ptr() noexcept; // (1)
 
 constexpr shared_ptr( std::nullptr_t ) noexcept; // (2)
@@ -54,11 +58,13 @@ shared_ptr( Y* ptr, Deleter d, Alloc alloc ); // (6)
 
 4번째 기본 생성자를 보면 두번째 인자로 Deleter 함수 객체를 받고 있고, 여기에 원하는 Deleter 함수 객체 or 람다를 넣어주면 `std::shared_ptr`가 그것으로 객체를 해제합니다.
 
+  
 
+  
 
-사용예
+**사용예**
 
-```c++
+```cpp
 #include <functional>
 #include <memory>
 

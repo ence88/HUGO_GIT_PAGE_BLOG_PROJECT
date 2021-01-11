@@ -45,7 +45,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Example
 
-```c++
+```cpp
 mymap['a']=20;
 mymap['b']=40;
 mymap['c']=60;

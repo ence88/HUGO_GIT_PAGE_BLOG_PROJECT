@@ -28,6 +28,10 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 
 <!--more-->
 
+  
+
+  
+
 ### 기본 키 제약 조건
 
 테이블에는 일반적으로 테이블의 각 행을 고유하게 식별하는 값을 가진 열 또는 열 조합이 포함되어 있습니다. 이러한 열이나 열 조합은 테이블의 PK(기본 키)라고 하며 테이블에 엔터티 무결성을 적용합니다. 기본 키 제약 조건은 데이터의 고유성을 보장하므로 자주 ID 열에 정의됩니다.
@@ -49,6 +53,10 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 
 
 
+  
+
+  
+
 ### Foreign Key Constraints
 
 외래 키(FK)는 두 테이블의 데이터 간 연결을 설정하고 강제 적용하여 외래 키 테이블에 저장될 수 있는 데이터를 제어하는 데 사용되는 열입니다. 외래 키 참조에서는 한 테이블의 기본 키 값을 가지고 있는 열을 다른 테이블의 열이 참조할 때 두 테이블 간에 연결이 생성됩니다. 이때 두 번째 테이블에 추가되는 열이 외래 키가 됩니다.
@@ -58,10 +66,10 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 각 테이블은 최대 253개의 다른 테이블 및 열을 외래 키(나가는 참조)로 참조할 수 있습니다. SQL Server 2016(13.x) 에서는 단일 테이블의 열을 참조할 수 있는 다른 테이블 및 열의 수 제한이 253에서 10,000으로 증가합니다. 단, 호환성 수준이 130 이상이어야 합니다. 이러한 참조 가능 테이블 및 열 수의 증가에는 다음과 같은 제한이 적용됩니다.
 
 - 253개를 초과하는 외래 키 참조는 DELETE DML 작업에서만 지원됩니다. UPDATE 및 MERGE 작업은 지원되지 않습니다.
-
 - 자기 자신에 대한 외래 키 참조가 포함된 테이블은 계속 253개의 외래 키 참조만 사용할 수 있습니다.
-
 - columnstore 인덱스, 메모리 최적화 테이블, 스트레치 데이터베이스 또는 분할된 외래 키 테이블에 대해서는 현재 253개보다 많은 외래 키 참조를 포함할 수 없습니다.
+
+  
 
   
 
@@ -73,6 +81,9 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 
 - 기본 키 제약 조건이 변경되면 연결된 테이블의 외래 키 제약 조건도 검사합니다.
 
+
+  
+
   
 
 ### 참조 무결성
@@ -80,6 +91,10 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 외래 키 제약 조건의 기본 목적이 외래 키 테이블에 저장되는 데이터를 제어하는 것이지만 기본 키 테이블의 데이터 변경 사항도 제어할 수 있습니다. 예를 들어 한 영업 사원에 대한 행이 **Sales.SalesPerson** 테이블에서 삭제되었는데 이 영업 사원의 ID가 **Sales.SalesOrderHeader** 테이블의 판매 주문에 사용된 경우 두 테이블 간의 관계 무결성이 손상됩니다. **SalesPerson** 테이블의 데이터에 대한 연결이 끊어졌으므로 삭제된 영업 사원의 판매 주문은 **SalesOrderHeader** 테이블에서 고아 항목이 됩니다.
 
 외래 키 제약 조건은 이런 상황이 발생되지 않도록 합니다. 이 제약 조건은 기본 키 테이블의 데이터를 변경할 때 외래 키 테이블에 있는 데이터로의 연결이 무효화될 가능성이 있으면 그 데이터를 변경하지 못하도록 하여 참조 무결성을 강제 적용합니다. 삭제되거나 변경되는 기본 키 값이 다른 테이블의 외래 키 제약 조건 값과 연결되어 있으면 기본 키 테이블의 행을 삭제하거나 기본 키 값을 변경하려는 동작이 수행되지 않습니다. 외래 키 제약 조건의 행을 제대로 변경하거나 삭제하려면 먼저 외래 키 테이블에 있는 외래 키 데이터를 삭제하거나 변경하여 외래 키를 다른 기본 키 데이터에 연결해야 합니다.
+
+  
+
+  
 
 ### 연계 참조 무결성
 
@@ -99,7 +114,9 @@ SET DEFAULT
 
 CASCADE, SET NULL, SET DEFAULT 및 NO ACTION은 서로 참조 관계를 가진 테이블에서 결합될 수 있습니다. 데이터베이스 엔진 이 NO ACTION을 발견하면 관련된 CASCADE, SET NULL 및 SET DEFAULT 동작을 멈추고 롤백합니다. DELETE 문으로 CASCADE, SET NULL, SET DEFAULT 및 NO ACTION 동작을 결합하면 데이터베이스 엔진 이 NO ACTION을 확인하기 전에 모든 CASCADE, SET NULL 및 SET DEFAULT 동작을 적용합니다.
 
+  
 
+  
 
 ### 트리거 및 연계 참조 동작
 
@@ -114,7 +131,9 @@ CASCADE, SET NULL, SET DEFAULT 및 NO ACTION은 서로 참조 관계를 가진 �
 - 특정 연계 참조 동작 체인 내에서 오류가 생성되면 오류가 발생하고 해당 체인에서 AFTER 트리거가 시작되지 않으며 체인을 만든 DELETE 또는 UPDATE 작업이 롤백됩니다.
 - INSTEAD OF 트리거가 있는 테이블은 연계 동작을 지정하는 REFERENCES 절도 가질 수 없습니다. 그러나 연계 동작의 대상이 되는 테이블의 AFTER 트리거는 다른 테이블 또는 그 개체에 정의된 INSTEAD OF 트리거를 시작하는 뷰에서 INSERT, UPDATE 또는 DELETE 문을 실행할 수 있습니다.
 
+  
 
+  
 
 ### SSMS 사용하여 기본 키를 만들려면
 
@@ -132,7 +151,9 @@ CASCADE, SET NULL, SET DEFAULT 및 NO ACTION은 서로 참조 관계를 가진 �
 
 복합 키를 정의하는 경우 기본 키의 열 순서는 테이블에 표시되는 열 순서와 일치합니다. 기본 키를 만든 후에 이러한 열 순서를 변경할 수 있습니다. 자세한 내용은 [기본 키 수정](https://docs.microsoft.com/ko-kr/sql/relational-databases/tables/modify-primary-keys?view=sql-server-ver15)을 참조하세요.
 
+  
 
+  
 
 ### 기존 테이블에 고유 키를 만들려면
 
@@ -143,7 +164,9 @@ ALTER TABLE Production.TransactionHistoryArchive
    ADD CONSTRAINT PK_TransactionHistoryArchive_TransactionID PRIMARY KEY CLUSTERED (TransactionID);
 ```
 
+  
 
+  
 
 ### 새 테이블에 고유 키를 만들려면
 
@@ -158,7 +181,9 @@ CREATE TABLE Production.TransactionHistoryArchive1
 ;
 ```
 
+  
 
+  
 
 ### 클러스터형 인덱스를 사용하여 새 테이블에 기본 키를 만들려면 다음을 수행합니다.
 
@@ -178,17 +203,19 @@ CREATE TABLE Production.TransactionHistoryArchive1
 CREATE CLUSTERED INDEX CIX_TransactionID ON Production.TransactionHistoryArchive1 (TransactionID);
 ```
 
+  
 
+  
 
 ### 개체 탐색기를 사용하여 PRIMARY KEY 제약 조건을 삭제하려면
 
 1. 개체 탐색기에서 기본 키가 포함된 테이블을 확장한 후 **키**를 확장합니다.
-
 2. 키를 마우스 오른쪽 단추로 클릭하고 **삭제**를 선택합니다.
-
 3. **개체 삭제** 대화 상자에서 올바른 키가 지정되었는지 확인하고 **확인**을 클릭합니다.
 
-   
+  
+
+  
 
 ### 테이블 디자이너를 사용하여 PRIMARY KEY 제약 조건을 삭제하려면
 
@@ -202,7 +229,10 @@ CREATE CLUSTERED INDEX CIX_TransactionID ON Production.TransactionHistoryArchive
 
 3. **파일** 메뉴에서 ‘테이블 이름’ **저장**을 클릭합니다.
 
-    
+
+  
+
+  
 
 ### Transact-SQL 사용하여 PRIMARY KEY 제약 조건을 삭제하려면
 
@@ -212,7 +242,7 @@ CREATE CLUSTERED INDEX CIX_TransactionID ON Production.TransactionHistoryArchive
 
 3. 다음 예를 복사하여 쿼리 창에 붙여 넣고 **실행**을 클릭합니다. 이 예에서는 먼저 PRIMARY KEY 제약 조건의 이름을 식별한 후 해당 제약 조건을 삭제합니다.
 
-   ```mssql
+   ```sql
 USE AdventureWorks2012;  
    GO  
    -- Return the name of primary key.  
@@ -226,7 +256,9 @@ USE AdventureWorks2012;
    GO  
    ```
 
+  
 
+  
 
 ###  특정 테이블의 관계에 대한 외래 키 특성을 보려면
 
@@ -235,7 +267,9 @@ USE AdventureWorks2012;
 
 외래 키 열이 기본 키에 연결되어 있으면 기본 키 열이 **테이블 디자이너** 의 행 선택기에서 기본 키 기호로 표시됩니다.
 
+  
 
+  
 
 ### 테이블 디자이너에서 외래 키 관계 만들기
 
@@ -265,7 +299,10 @@ USE AdventureWorks2012;
 
 9. 테이블 디자이너 창을 닫고 외래 키 관계 변경 내용이 적용되도록 **저장**합니다.
 
-   
+
+  
+
+  
 
 ### 새 테이블에서 외래 키 만들기
 
@@ -286,7 +323,9 @@ CREATE TABLE Sales.TempSalesReason
 ;
 ```
 
+  
 
+  
 
 ### 기존 테이블에서 외래 키 만들기
 
@@ -303,7 +342,9 @@ ALTER TABLE Sales.TempSalesReason
 ;
 ```
 
+  
 
+  
 
 ### 외래 키를 수정하려면
 
@@ -382,7 +423,9 @@ ALTER TABLE Sales.TempSalesReason
 
 4. **파일** 메뉴에서 ‘테이블 이름’ **저장**을 클릭합니다.
 
+  
 
+  
 
 ### FOREIGN KEY 제약 조건을 삭제하려면
 
@@ -390,7 +433,9 @@ ALTER TABLE Sales.TempSalesReason
 2. 제약 조건을 마우스 오른쪽 단추로 클릭한 다음 **삭제**를 클릭합니다.
 3. **개체 삭제** 대화 상자에서 **확인**을 클릭합니다.
 
+  
 
+  
 
 ### Transact-SQL 사용 FOREIGN KEY 제약 조건을 삭제하려면
 
@@ -400,7 +445,7 @@ ALTER TABLE Sales.TempSalesReason
 
 3. 다음 예를 복사하여 쿼리 창에 붙여 넣고 **실행**을 클릭합니다.
 
-   ```mssql
+   ```sql
 USE AdventureWorks2012;  
    GO  
    ALTER TABLE dbo.DocExe   
@@ -408,7 +453,9 @@ USE AdventureWorks2012;
    GO  
    ```
 
+  
 
+  
 
 ### INSERT 및 UPDATE 문에 대한 FOREIGN KEY 제약 조건을 사용하지 않으려면
 
@@ -418,7 +465,7 @@ USE AdventureWorks2012;
 
 3. 다음 예를 복사하여 쿼리 창에 붙여 넣고 **실행**을 클릭합니다.
 
-   ```mssql
+   ```sql
 USE AdventureWorks2012;  
    GO  
    ALTER TABLE Purchasing.PurchaseOrderHeader  

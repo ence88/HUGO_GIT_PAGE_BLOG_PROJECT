@@ -24,7 +24,7 @@ keywords:
 #thumbnailImage: //example.com/image.jpg
 ---
 
-#### 구문
+### 구문
 
 ```sql
 -- Syntax for SQL Server
@@ -34,7 +34,11 @@ SET ANSI_NULLS { ON | OFF }
 
 <!--more-->
 
-#### 설명
+  
+
+  
+
+### 설명
 
 ANSI_NULLS 옵션이 ON인 경우, WHERE *column_name* = **NULL**을 사용하는 SELECT 문은 *column_name*에 null 값이 있어도 0행을 반환합니다. WHERE *column_name* <> **NULL**을 사용하는 SELECT 문은 *column_name*에 Null 이외의 값이 있어도 0행을 반환합니다.
 
@@ -69,7 +73,11 @@ ANSI_NULLS 데이터베이스 옵션이나 SET ANSI_NULLS 설정에 관계없이
 
 
 
-#### 예제
+  
+
+  
+
+### 예제
 
 다음 예에서는 Equals(`=`)와 Not Equal To(`<>`) 비교 연산자를 사용하여 테이블의 `NULL` 및 Null이 아닌 값에 비교를 수행합니다. 또한 `IS NULL`이 `SET ANSI_NULLS` 설정의 영향을 받지 않는다는 것을 보여 줍니다.
 

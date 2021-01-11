@@ -31,6 +31,10 @@ Perforce에도 비슷한 기능이 있는데 바로 Time Lase View입니다.
 
 <!--more-->
 
+​    
+
+  
+
 자세한 사용법은 https://www.perforce.com/video-tutorials/vcs/using-time-lapse-view 공식 페이지에 동영상과 설명이 잘 되어 있습니다.
 
 p4vs나 p4EXP 사용시 [ 파일 -> 우클릭 -> Time-lapse View ] 과 같은 방법으로 접근 가능합니다.

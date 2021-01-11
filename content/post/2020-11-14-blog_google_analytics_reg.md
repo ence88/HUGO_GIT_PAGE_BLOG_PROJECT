@@ -27,6 +27,10 @@ keywords:
 
 <!--more-->
 
+  
+
+  
+
 #### 계정 생성 및 측정 ID 획득
 
 - [Google analytics](https://analytics.google.com/analytics) 가입합니다.
@@ -38,6 +42,9 @@ keywords:
 - 사이트 url과 이름을 등록후 `스트림 만들기`
 
 - 만들어진 스트림의 `추적 ID` 를 얻을 수 있습니다.
+
+
+  
 
   
 

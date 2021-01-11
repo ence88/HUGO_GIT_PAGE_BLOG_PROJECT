@@ -34,6 +34,8 @@ keywords:
 
 <!--more-->
 
+  
+
 ### 커서 선언
 
 ```sql
@@ -42,7 +44,9 @@ DECLARE   CursorEmail   CURSOR
 FOR SELECT Email from tblUserTable where IsDelete = 'False'
 ```
 
+   
 
+  
 
 ### 커서 열기
 
@@ -51,11 +55,13 @@ FOR SELECT Email from tblUserTable where IsDelete = 'False'
 Open CursorEmail;
 ```
 
+  
 
+  
 
 ### 불러온 데이터를 이용한 작업
 
-```
+```sql
 -- 맨처음 결과 데이터로 이동
 Fetch Next From CursorEmail Into @email 
 
@@ -68,16 +74,20 @@ BEGIN;
 END;
 ```
 
+   
 
+  
 
 ### 커서 닫기
 
-```
+```sql
 Close CursorEmail; 
 Deallocate CursorEmail;
 ```
 
+​    
 
+   
 
 ### FETCH 구문
 
@@ -93,7 +103,7 @@ FETCH
 [ INTO @variable_name [ ,...n ] ]  
 ```
 
-
+  
 
 #### 인수
 

@@ -28,6 +28,10 @@ keywords:
 
 <!--more-->
 
+  
+
+  
+
 ## 구문
 
 ```sql
@@ -35,7 +39,9 @@ OBJECT_ID ( '[ database_name . [ schema_name ] . | schema_name . ]
   object_name' [ ,'object_type' ] )  
 ```
 
+  
 
+  
 
 ## 인수
 
@@ -45,13 +51,17 @@ OBJECT_ID ( '[ database_name . [ schema_name ] . | schema_name . ]
 **'** *object_type* **'**
 스키마 범위 개체 형식입니다. *object_type*은 **varchar** 또는 **nvarchar**입니다. *object_type*이 **varchar**인 경우 암시적으로 **nvarchar**로 변환됩니다. 개체 형식의 목록은 [sys.objects (Transact-SQL)](https://docs.microsoft.com/ko-kr/sql/relational-databases/system-catalog-views/sys-objects-transact-sql?view=sql-server-ver15)의 **type** 열을 참조하세요.
 
+  
 
+  
 
 ## 반환 형식
 
 **int**
 
+  
 
+  
 
 ## 예외
 
@@ -61,7 +71,9 @@ OBJECT_ID ( '[ database_name . [ schema_name ] . | schema_name . ]
 
 사용자는 소유하고 있거나 사용 권한을 부여 받은 보안 개체의 메타데이터만 볼 수 있습니다. 즉, 사용자가 개체에 대한 사용 권한이 없으면 OBJECT_ID와 같은 메타데이터 내보내기 기본 제공 함수가 NULL을 반환합니다. 자세한 내용은 [Metadata Visibility Configuration](https://docs.microsoft.com/ko-kr/sql/relational-databases/security/metadata-visibility-configuration?view=sql-server-ver15)을 참조하세요.
 
+  
 
+  
 
 ## 설명
 
@@ -71,7 +83,9 @@ OBJECT_ID ( '[ database_name . [ schema_name ] . | schema_name . ]
 
 시스템 함수는 선택 목록, WHERE 절 및 식이 허용되는 모든 곳에서 사용될 수 있습니다. 자세한 내용은 [식 (Transact-SQL)](https://docs.microsoft.com/ko-kr/sql/t-sql/language-elements/expressions-transact-sql?view=sql-server-ver15) 및 [WHERE (Transact-SQL)](https://docs.microsoft.com/ko-kr/sql/t-sql/queries/where-transact-sql?view=sql-server-ver15)을 참조하세요.
 
+  
 
+  
 
 ## 예
 

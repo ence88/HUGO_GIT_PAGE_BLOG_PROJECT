@@ -28,6 +28,10 @@ keywords:
 
 <!--more-->
 
+  
+
+  
+
 Luckily, the not-so-new C++11 provides, among other things, interface to high-precision clocks in a portable way. It’s still not a perfect solution, as it only provides wall-time (`clock_gettime` can give per process and per thread actual CPU time as well). However, it’s still nice.
 
 ```cpp
@@ -49,11 +53,19 @@ int main()
 }
 ```
 
+  
+
+  
+
 I’ll explain a bit the code. `chrono` is the new header files that provides various time and clock related functionality of the new standard library. `high_resolution_clock` should be, according to the standard, the clock with the highest precision.
 
 ```cpp
 cout << chrono::high_resolution_clock::period::den << endl;
 ```
+
+  
+
+  
 
 Note, that there isn’t a guarantee how many the ticks per seconds it has, only that it’s the highest available. Hence, the first thing we do is to get the precision, by printing how many many times a second the clock ticks. My system provides 1000000 ticks per second, which is a microsecond precision.
 

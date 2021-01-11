@@ -34,6 +34,10 @@ SELECT * FROM TABLE1 WITH (NOLOCK)
 
 <!--more-->
 
+  
+
+  
+
 SELECT 문이 수행되는 테이블에 대해서 INSERT, UPDATE, DELETE 문이 수행되고 있다면 SELECT문은 선행 작업이 모두 끝날때까지 LOCK이 걸립니다.
 
 이때 SELECT 문에 WITH (NOLOCK)을 추가하면 선행작업의 결과와 관계없이 바로 SELECT문이 수행되어서 결과를 반환하게 됩니다.
@@ -46,6 +50,10 @@ inner join Bonus as b with(nolock) on b.id = sb.BonusID and b.BonusTypeID = 1111
 
 
 
+  
+
+  
+
 프로시저 내에서 사용되는 SELECT 문에서 WITH (NOLOCK)을 사용하기 위해서는 각 문장마다 삽입할 필요없이 프로시저 시작 부분에 다음 문장을 추가해 주면 됩니다.
 
  ```mssql
@@ -53,6 +61,10 @@ SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
  ```
 
 
+
+  
+
+  
 
 사용 예시
 

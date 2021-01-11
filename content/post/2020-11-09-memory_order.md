@@ -38,7 +38,11 @@ is lock free가 true인 경우 CPU에서 지원 해주는 것입니다.
 
 <!--more-->
 
+  
+
 `atomic` 객체들의 경우 원자적 연산 시에 메모리에 접근할 때 어떠한 방식으로 접근하는지 지정할 수 있습니다.
+
+  
 
 #### memory_order_relexed
 
@@ -51,17 +55,23 @@ is lock free가 true인 경우 CPU에서 지원 해주는 것입니다.
 
 
 
+  
+
 #### memory_order_acquire
 
 `memory_order_acquire` 의 경우, `release` 와는 반대로 **해당 명령 뒤에 오는 모든 메모리 명령들이 해당 명령 위로 재배치 되는 것을 금지** 합니다.
 
 
 
+  
+
 #### memory_order_acq_rel
 
 `memory_order_acq_rel` 은 이름에서도 알 수 있듯이, `acquire` 와 `release` 를 모두 수행하는 것입니다. 이는, 읽기와 쓰기를 모두 수행하는 명령들, 예를 들어서 `fetch_add` 와 같은 함수에서 사용될 수 있습니다.
 
 
+
+  
 
 #### memory_order_seq_cst
 
