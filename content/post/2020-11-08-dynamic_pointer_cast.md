@@ -29,7 +29,7 @@ keywords:
 
 특별히 캐스트 연산자를 사용하지 않고 형변환이 이루어지는 경우를 "묵시적 캐스트" 라고 합니다.
 
-```c++
+```cpp
    int i = 10;
    char c = i;         // 묵시적 캐스트
    char c = (char) i;  // 명시적 캐스트 (c-style)
@@ -67,7 +67,7 @@ char* dd1 = static_cast<char*>(intVal); //컴파일 에러
 
 const_cast는 표현식의 **상수성(const)을 없애는 데 사용**됩니다.
 
-```c++
+```cpp
 // 상수성 부여
 char chArray[] = "Hello";
 const char* chPointer = chArray;
@@ -97,7 +97,7 @@ reinterpret_cast는 어떠한 포인터 타입도 어떠한 포인터 타입으�
 게다가 이 연산자가 적용된 후의 변환 결과는 거의 항상 컴파일러에 따라 다르게 정의되어 있습니다.
 따라서, 이 캐스팅 연산자가 쓰인 소스는 직접 다른 곳에 소스 이식이 불가능할 수 있습니다.
 
-```c++
+```cpp
 // 포인터의 주소에 기반하여 해당 값을 해쉬로 정의하여 값을 반환함.
 unsigned short Hash( void *p ) 
 {
@@ -121,7 +121,7 @@ dynamic_cast는 **런타임**에 (동적으로) 상속 계층 관계를 가로�
 dynamic_cast는 **다형성을 띄지 않은 객체간 변환은 불가능하며, 시도시 컴파일 에러**가 발생합니다.
 또한 RTTI에 의존적이므로 변환 비용이 비쌉니다.
 
-```c++
+```cpp
 class BaseClass {...};
 class DerivedClass : public BaseClass {...};
 
@@ -159,7 +159,7 @@ DerivedClass* pSDC = dynamic_cast<DerivedClass*>(pBC);
 <dynamic_cast> 동적으로 형변환을 시도해 본다는 것은 이 녀석의 타입을 반드시 질의해 봐야 된다는 것을 의미합니다.
 RTTI를 해야 하는 경우엔 dynamic_cast를 이용해 런타입의 해당 타입을 명확히 질의해야 하고, 그렇지 않은 경우엔 static_cast를 사용하여 변환 비용을 줄이는 것이 좋습니다.
 
-```c++
+```cpp
 // 비행기에 여러 직군의 사람들이 탑승했다.
 // 한 승객이 갑자기 급성 맹장염에 걸려 의사가 급하게 수술을 해야 한다.
 class Passenger {...};
