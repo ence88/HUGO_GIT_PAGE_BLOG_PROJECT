@@ -64,8 +64,7 @@ enableRobotsTXT = true
   identifier = "search"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/#search"
-  class = "open-algolia-search"
+  url = "/search"
 [[menu.main]]
   weight = 3
   identifier = "categories"
