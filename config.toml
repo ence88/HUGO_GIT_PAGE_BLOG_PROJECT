@@ -33,7 +33,7 @@ enableRobotsTXT = true
   post = "/:year/:month/:slug/"
 
 [taxonomies]
-  tag = "tag"
+  tag = "tags"
   category = "categories"
   archive = "archive"
 
@@ -61,10 +61,10 @@ enableRobotsTXT = true
   url = "/"
 [[menu.main]]
   weight = 2
-  identifier = "tag"
+  identifier = "tags"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/tag"
+  url = "/tags"
 [[menu.main]]
   weight = 3
   identifier = "categories"
