@@ -35,13 +35,13 @@ iterator upper_bound(const Key& key);
 const_iterator upper_bound(const Key& key) const;
 ```
 
-
+  
 
 ### 반환 값
 
 `iterator` `const_iterator` 인수 키 보다 큰 키를 사용 하 여 map에서 요소 위치의 주소를 가져오거나, 해당 `map` 키와 일치 하는 항목이 없는 경우에서 마지막 요소 다음 위치의 주소를 나타냅니다.
 
-
+  
 
 ### Example
 
@@ -55,7 +55,5 @@ mymap['e']=100;
 itlow = mymap.lower_bound ('b');
 itup  = mymap.upper_bound ('d');
 ```
-
-
 
 > 위 코드의 경우 itlow는 b를 itup은 e를 가르키는 iterator가 된다.

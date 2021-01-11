@@ -38,9 +38,7 @@ keywords:
 
 <!--more-->
 
-
-
-
+  
 
 ### static_cast
 
@@ -60,7 +58,7 @@ char* dd1 = static_cast<char*>(intVal); //컴파일 에러
   struct 타입을 int나 double 타입으로 형변환 할 수 없고, float 타입을 포인터 타입으로 형변환 할 수 없습니다.
   게다가, static_cast는 표현식이 원래 가지고 있는 상수성(const)를 제거 할 수 없습니다.(이를 위해 별도로 const_cast가 존재합니다.)
 
-
+  
 
 
 ### const_cast
@@ -108,9 +106,7 @@ unsigned short Hash( void *p )
 }
 ```
 
-
-
-
+  
 
 ### dynamic_cast
 
@@ -149,9 +145,7 @@ DerivedClass* pSDC = dynamic_cast<DerivedClass*>(pBC);
 */
 ```
 
-
-
-
+  
 
 ### static_cast VS. dynamic_cast (어떨때 써야 하나)
 
@@ -234,9 +228,7 @@ static_cast는 동적 타입체크를 하지 않고, Student와 Teacher는 Perso
 이때 멤버 필드에 접근시 엉뚱한 값이 들어가 있거나, 런타임 오류가 발생할 수 있게 됩니다.
 위 예제를 잘 보고 언제 static_cast와 dynamic_cast를 구분해서 쓰는 게 좋은지 잘 이해해야 합니다.
 
-
-
-
+​    
 
 ### 스마트포인터 형변환 static_pointer_cast / dynamic_pointer_cast / const_pointer_cast
 
