@@ -36,7 +36,7 @@ enableRobotsTXT = true
   tag = "tags"
   category = "categories"
   archive = "archives"
-  search = "temp"
+  search = "search"
 
 [author]
   name = "Developing life"
@@ -80,7 +80,7 @@ enableRobotsTXT = true
   url = "/tags"
 [[menu.main]]
   weight = 5
-  identifier = "temp"
+  identifier = "search"
   name = "temp"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/search"
