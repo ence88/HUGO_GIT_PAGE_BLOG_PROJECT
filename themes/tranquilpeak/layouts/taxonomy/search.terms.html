@@ -1,125 +1,56 @@
-{{ partial "head.html" . }}
-  <body>
-    <div id="blog">
-      {{ partial "header.html" . }}
-      {{ partial "sidebar.html" . }}
-      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
-        class="{{ with .Params.coverImage }}hasCover{{ end }}
-               {{ if eq .Params.coverMeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
-               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
-        <div id="search" class="main-content-wrap">
-Search:
-    <input id="search" type="text">
-    <br> Results:
-    <ul id="results">
-    </ul>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="js/vendor/lunr.min.js"></script>
-    <script type="text/javascript">
-    var lunrIndex,
-        $results,
-        pagesIndex;
-
-    // Initialize lunrjs using our generated index file
-    function initLunr() {
-        // First retrieve the index file
-        $.getJSON("js/lunr/PagesIndex.json")
-            .done(function(index) {
-                pagesIndex = index;
-                console.log("index:", pagesIndex);
-
-                // Set up lunrjs by declaring the fields we use
-                // Also provide their boost level for the ranking
-                lunrIndex = lunr(function() {
-                    this.field("title", {
-                        boost: 10
-                    });
-                    this.field("tags", {
-                        boost: 5
-                    });
-                    this.field("content");
-
-                    // ref is the result item identifier (I chose the page URL)
-                    this.ref("href");
-                });
-
-                // Feed lunr with each file and let lunr actually index them
-                pagesIndex.forEach(function(page) {
-                    lunrIndex.add(page);
-                });
-            })
-            .fail(function(jqxhr, textStatus, error) {
-                var err = textStatus + ", " + error;
-                console.error("Error getting Hugo index flie:", err);
-            });
-    }
-
-    // Nothing crazy here, just hook up a listener on the input field
-    function initUI() {
-        $results = $("#results");
-        $("#search").keyup(function() {
-            $results.empty();
-
-            // Only trigger a search when 2 chars. at least have been provided
-            var query = $(this).val();
-            if (query.length < 2) {
-                return;
-            }
-
-            var results = search(query);
-
-            renderResults(results);
-        });
-    }
-
-    /**
-     * Trigger a search in lunr and transform the result
-     *
-     * @param  {String} query
-     * @return {Array}  results
-     */
-    function search(query) {
-        // Find the item in our index corresponding to the lunr one to have more info
-        // Lunr result: 
-        //  {ref: "/section/page1", score: 0.2725657778206127}
-        // Our result:
-        //  {title:"Page1", href:"/section/page1", ...}
-        return lunrIndex.search(query).map(function(result) {
-                return pagesIndex.filter(function(page) {
-                    return page.href === result.ref;
-                })[0];
-            });
-    }
-
-    /**
-     * Display the 10 first results
-     *
-     * @param  {Array} results to display
-     */
-    function renderResults(results) {
-        if (!results.length) {
-            return;
-        }
-
-        // Only show the ten first results
-        results.slice(0, 10).forEach(function(result) {
-            var $result = $("<li>");
-            $result.append($("<a>", {
-                href: result.href,
-                text: "» " + result.title
-            }));
-            $results.append($result);
-        });
-    }
-
-    // Let's get started
-    initLunr();
-
-    $(document).ready(function() {
-        initUI();
-    });
-    </script>
+{{ with .Site.Params.algolia }}
+  <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+      <div class="modal-header">
+        <span class="close-button"><i class="fa fa-close"></i></span>
+        <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+          <span class="searchby-algolia-text text-color-light text-small">by</span>
+          <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+        </a>
+        <i class="search-icon fa fa-search"></i>
+        <form id="algolia-search-form">
+          <input type="text" id="algolia-search-input" name="search"
+            class="form-control input--large search-input" placeholder="{{ i18n "global.search" }}" />
+        </form>
+      </div>
+      <div class="modal-body">
+        <div class="no-result text-color-light text-center">{{ i18n "global.posts_found.zero" }}</div>
+        <div class="results">
+          {{ $posts := (where .Site.RegularPages "Section" "post") }}
+          {{ range first 10 $posts }}
+            <div class="media">
+              {{ if .Params.thumbnailImageUrl }}
+                <div class="media-left">
+                  <a class="link-unstyled" href="{{ .Permalink }}">
+                    <img class="media-image" src="{{ .Params.thumbnailImageUrl }}" width="90" height="90"/>
+                  </a>
+                </div>
+              {{ end }}
+              <div class="media-body">
+                <a class="link-unstyled" href="{{ .Permalink }}">
+                  <h3 class="media-heading">{{ .Title }}</h3>
+                </a>
+                <span class="media-meta">
+                  <span class="media-date text-small">
+                    {{ .Date.Format "Jan 1, 2006" }}
+                  </span>
+                </span>
+                <div class="media-content hide-xs font-merryweather">{{ .Summary }}</div>
+              </div>
+              <div style="clear:both;"></div>
+              <hr>
+            </div>
+          {{ end }}
         </div>
       </div>
+      <div class="modal-footer">
+        <p class="results-count text-medium"
+          data-message-zero="{{ i18n "global.posts_found.zero" }}"
+          data-message-one="{{ i18n "global.posts_found.one" }}"
+          data-message-other="{{ i18n "global.posts_found.other" }}">
+          {{ len $posts }} posts found
+        </p>
+      </div>
     </div>
-{{ partial "foot.html" . }}
+  </div>
+{{ end }}
