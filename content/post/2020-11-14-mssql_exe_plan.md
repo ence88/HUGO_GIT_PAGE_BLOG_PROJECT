@@ -38,13 +38,13 @@ keywords:
 
 2. 실행 계획의 빈 영역을 마우스 오른쪽 단추로 클릭하고 **실제 실행 계획 분석**을 클릭합니다.
 
-   ![실제 실행 계획 분석을 마우스 오른쪽 단추로 클릭](https://docs.microsoft.com/ko-kr/sql/relational-databases/performance/media/plananalysismenuoption.png?view=sql-server-ver15)
+   ![실제 실행 계획 분석을 마우스 오른쪽 단추로 클릭](img/plananalysismenuoption.png)
 
 3. **실행 계획 분석** 창이 아래쪽에 열립니다. 분석할 올바른 명령문 쌍을 허용하여 다중 명령문으로 계획을 분석할 때 **다중 명령문** 탭은 유용합니다.
 
 4. 실제 실행 계획에 대해 찾은 문제에 대한 세부 정보를 보려면 [시나리오] 탭을 선택합니다. 왼쪽 창에서 나열된 각 연산자의 경우 오른쪽 창은 *이 시나리오에 대한 자세한 내용은 여기를 클릭하세요* 링크의 시나리오에 대한 세부 정보를 보여주며, 해당 시나리오를 설명하는 가능한 원인이 나열됩니다.
 
-   ![실행 계획 분석 결과](https://docs.microsoft.com/ko-kr/sql/relational-databases/performance/media/plananalysis-scenarios.png?view=sql-server-ver15)
+   ![실행 계획 분석 결과](\img\plananalysis-scenarios.png)
    
 
 

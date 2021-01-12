@@ -42,7 +42,7 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 
 **oductVendor** 테이블의 모든 열에서 **ProductID**와 **VendorID**의 조합은 고유합니다. 따라서 중복 행을 삽입할 수 없습니다.
 
-![복합 PRIMARY KEY 제약 조건](https://docs.microsoft.com/ko-kr/sql/relational-databases/tables/media/fund04.gif?view=sql-server-ver15)
+![복합 PRIMARY KEY 제약 조건](\img\fund04.png)
 
 - 테이블은 하나의 기본 키 제약 조건만 포함할 수 있습니다.
 - 기본 키는 16개 열을 초과할 수 없으며 총 키 길이가 900바이트를 넘을 수 없습니다.
@@ -82,9 +82,9 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 - 기본 키 제약 조건이 변경되면 연결된 테이블의 외래 키 제약 조건도 검사합니다.
 
 
-  
 
-  
+
+
 
 ### 참조 무결성
 
@@ -230,9 +230,9 @@ CREATE CLUSTERED INDEX CIX_TransactionID ON Production.TransactionHistoryArchive
 3. **파일** 메뉴에서 ‘테이블 이름’ **저장**을 클릭합니다.
 
 
-  
 
-  
+
+
 
 ### Transact-SQL 사용하여 PRIMARY KEY 제약 조건을 삭제하려면
 
@@ -300,9 +300,9 @@ USE AdventureWorks2012;
 9. 테이블 디자이너 창을 닫고 외래 키 관계 변경 내용이 적용되도록 **저장**합니다.
 
 
-  
 
-  
+
+
 
 ### 새 테이블에서 외래 키 만들기
 

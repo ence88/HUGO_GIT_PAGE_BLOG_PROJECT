@@ -36,11 +36,11 @@ keywords:
 
 함수의 반환 값을 보려면 코드를 단계별로 실행하는 동안 **자동** 창에 표시되는 함수를 확인합니다. 함수의 반환 값을 보려면 관심 있는 함수가 이미 실행되었는지 확인합니다(현재 함수 호출에서 중지된 경우 **F10** 키를 누름). 창이 닫히면 **디버그 > Windows > 자동**을 사용하여 **자동** 창을 엽니다.
 
-![자동 창](https://docs.microsoft.com/ko-kr/visualstudio/debugger/media/dbg-tips-autos-window.png?view=vs-2019)
+![자동 창](\img\dbg-tips-autos-window.png)
 
 또한 **직접 실행** 창에 함수를 입력하여 반환 값을 볼 수 있습니다. (**디버그 > Windows > 직접 실행**을 사용하여 엽니다.)
 
-![직접 실행 창](https://docs.microsoft.com/ko-kr/visualstudio/debugger/media/dbg-tips-immediate-window.png?view=vs-2019)
+![직접 실행 창](\img\dbg-tips-immediate-window.png)
 
 **조사식** 및 **즉시 실행** 창에서 `$ReturnValue`와 같은 [의사 변수](https://docs.microsoft.com/ko-kr/visualstudio/debugger/pseudovariables?view=vs-2019)를 사용할 수도 있습니다.
 
@@ -109,7 +109,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/1501434551641DFD03)
+![img](\img\1501434551641DFD03.png)
 
 
 
@@ -123,7 +123,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/1954EB4D5164223C18)
+![img](\img\1954EB4D5164223C18.png)
 
 
 
@@ -131,7 +131,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/1368E24F516422960C)
+![img](\img\1368E24F516422960C.png)
 
   
 
@@ -143,7 +143,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/031FB437516428823D)
+![img](\img\031FB437516428823D.png)
 
 
 
@@ -151,7 +151,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/2371CC345164296B1F)
+![img](\img\2371CC345164296B1F)
 
 
 
@@ -165,7 +165,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/243EFD36516429CF14)
+![img](\img\243EFD36516429CF14.png)
 
 
 
@@ -177,7 +177,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/220DE14551642ADC2C)
+![img](\img\220DE14551642ADC2C.png)
 
 
 
@@ -185,7 +185,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/2153C53651642B530D)
+![img](\img\2153C53651642B530D.png)
 
 
 
@@ -213,7 +213,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/233E354051642F3E34)
+![img](\img\233E354051642F3E34.png)
 
 
 
@@ -221,7 +221,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/223DEC4651642F8410)
+![img](\img\223DEC4651642F8410.png)
 
 
 
@@ -229,7 +229,7 @@ C++/CLI - 지원되지 않는 식
 
 
 
-![img](https://t1.daumcdn.net/cfile/tistory/1248813351642FF034)
+![img](\img\1248813351642FF034.png)
 
 
 
