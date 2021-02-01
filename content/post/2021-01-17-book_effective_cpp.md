@@ -1,12 +1,14 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
-#Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN, Book, Study, VOCA
+title: "2021 01 17 Book_effective_cpp"
+date: 2021-01-17T16:16:24+09:00
+#Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN, Book
 categories:
-- None
+- Common
+- Book
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
-- None
+- C++
+- Book Summary
 keywords:
 - tech
 - developer
@@ -18,7 +20,7 @@ keywords:
 - coding
 - 코딩
 - server
-
+draft: true
 #thumbnailImage: //example.com/image.jpg
 ---
 
