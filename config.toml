@@ -71,12 +71,12 @@ enableRobotsTXT = true
   name = "Categories"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
   url = "/categories"
-[[menu.main]]
-  weight = 4
-  identifier = "archive"
-  name = "Histories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
-  url = "/archive"
+#[[menu.main]]
+#  weight = 4
+#  identifier = "archive"
+#  name = "Histories"
+#  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+#  url = "/archive"
 #[[menu.main]]
 #  weight = 5
 #  identifier = "search"
