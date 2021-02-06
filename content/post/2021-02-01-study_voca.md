@@ -72,4 +72,4 @@ MD33000 수준(GRE) 어휘는 다른 포스팅에서 정리 예정
 
 
 
-p87, to be continue...Try, multi threading your brain
+p87, to be continue...
