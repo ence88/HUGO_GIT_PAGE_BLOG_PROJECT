@@ -1,6 +1,6 @@
 ---
 title: "Effective Modern C++ 내용 정리"
-date: 2021-01-17T16:16:24+09:00
+date: 2021-02-06T16:16:24+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN, Book
 categories:
 - Common
