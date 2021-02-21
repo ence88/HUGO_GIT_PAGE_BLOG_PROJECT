@@ -71,11 +71,11 @@ keywords:
 - IDEA 실행 -> Projects -> New Project
 
   - Kotlin -> 템플릿은 Console Application -> Project JDK는 위에서 설치한 JDK
-  ![1](\img\kotlin2_1.png)
+  ![1](\img\kotlin2_11.png)
   - JVM Target 설치한 JDK로 세팅
-  ![2](\img\kotlin2_2.png)
+  ![2](\img\kotlin2_22.png)
   - 자동으로 생성된 프로젝트 Build and Run시 Configuration 세팅 요구 할 경우 다음과 같이 설정
-    ![3](\img\kotlin2_3.png)
+    ![3](\img\kotlin2_33.png)
   - Build and Run 후 Output에 HelloWorld 정상 출력 확인
-    ![4](\img\kotlin2_4.png)
+    ![4](\img\kotlin2_44.png)
   
