@@ -79,3 +79,7 @@ keywords:
   - Build and Run 후 Output에 HelloWorld 정상 출력 확인
     ![4](/img/kotlin2_44.png)
   
+
+
+
+[더 많은 코틀린 관련 정보](https://kotlinlang.org/docs/reference/)
