@@ -1,6 +1,6 @@
 ---
 title: "코틀린 리서치 - Types and Variables[3]"
-date: 2021-02-21T16:12:30+09:00
+date: 2021-02-23T16:12:30+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN, Book, Study, VOCA, Kotlin
 categories:
 - Language

@@ -1,6 +1,6 @@
 ---
 title: "코틀린 리서치 - 개발환경 세팅[2]"
-date: 2021-02-21T16:12:30+09:00
+date: 2021-02-22T16:12:30+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN, Book, Study, VOCA, Kotlin
 categories:
 - Language
