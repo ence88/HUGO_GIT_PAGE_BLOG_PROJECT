@@ -72,7 +72,7 @@ var b = 10f // b는 float
 
 - 참/거짓 : Boolean
 
-```c#
+```python
 fun main(args: Array<String>) {
     var_declarations()
 }
