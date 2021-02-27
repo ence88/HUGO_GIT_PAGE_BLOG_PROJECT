@@ -45,7 +45,7 @@ val 변수명:타입명 = 대입값 // 상수 타입(불변)
 
 - 타입명을 생략 할 경우 컴파일러에서 대입값을 통해 타입을 추론합니다.
 
-```kotlin
+```c#
 var a = 64 // a는 int
 var b = 10f // b는 float
 ```
@@ -72,7 +72,7 @@ var b = 10f // b는 float
 
 - 참/거짓 : Boolean
 
-```kotlin
+```c#
 fun main(args: Array<String>) {
     var_declarations()
 }
@@ -102,7 +102,7 @@ fun var_declarations()
 
 Ranges는 특수화된 생성을 통해 여러가지 특징을 갖는 특별한 타입입니다.
 
-```kotlin
+```c#
 fun ranges()
 {
     val a: IntRange = 1..10 // 1, 2, 3, ..... , 10
@@ -127,7 +127,7 @@ fun ranges()
 
 ### Arrays Type
 
-```kotlin
+```c#
 fun arrays()
 {
     var names: Array<String> = arrayOf("김", "나", "박", "이")
@@ -149,7 +149,7 @@ fun arrays()
 
 ### String Type and String Interpolation
 
-```kotlin
+```c#
 fun character_and_string()
 {
     var a:Char = '\u0041'
