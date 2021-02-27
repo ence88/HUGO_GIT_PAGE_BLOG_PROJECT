@@ -143,18 +143,24 @@ fun LambdaExample()
 코틀린에서는 기존에 존재하는 객체에 사용자가 특정 함수를 포함시킬 수 있습니다.
 
 ```python
+fun <T> ArrayList<T>.swap(index1:Int, index2:Int)
+{
+    val temp = this[index1]
+    this[index1] = this[index2]
+    this[index2] = temp
+}
+
 fun ExtensionFuncExample()
 {
     var MyIntFunc = fun Int.(value:Int) = this + value
     var x = 1
 
     print(x.MyIntFunc(10)) // Int 객체에 MyIntFunc가 포함된 것처럼 사용 가능하다.
+
+    val myList = arrayListOf(1, 2, 3)
+    myList.swap(0, 2) // arrayList에 swap을 추가하여 사용 가능
 }
 ```
-
-
-
-
 
 
 
