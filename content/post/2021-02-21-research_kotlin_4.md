@@ -26,9 +26,11 @@ keywords:
 #thumbnailImage: //example.com/image.jpg코틀코틀코코틀
 ---
 
-코틀린의 Nullability, If 문, Smart Cast, loop 문, When 문에 대해 알아보겠습니다. 
+코틀린의 Nullability, When Expression에 대해 알아보겠습니다. 
 
 <!--more-->
+
+  
 
 ### Nullability
 
@@ -38,7 +40,7 @@ Nullable 타입 변수의 오버라이딩된 함수를 사용 할 때에는 ?. �
 
 !!. 표현식은 nullable 타입 관련 컴파일 타임 문법 체크를 통과시킬 수 있습니다.
 
-```c#
+```python
 fun nullability()
 {
     var y:String? = null // nullable string
@@ -50,9 +52,45 @@ fun nullability()
 }
 ```
 
+  
 
+  
 
+### When Expression
 
+코틀린에서 when 표현식은 C의 switch cast와 유사합니다.
+
+```python
+fun when_exp()
+{
+    var code = 44
+
+    when (code)
+    {
+        44 -> println("UK")
+        46 -> println("sweden")
+        39, 379 -> println("vatican")
+        in 1..999 -> println("i don't know")
+        else ->
+        {
+            println("error")
+        }
+    }
+
+    var z:Any = "Foo"
+
+    var output = when (z) 
+    {
+        is Int -> print("this is int type") // is 키워드로 타입 검사 가능
+        is String -> println("this is string type")
+        else -> println("other type")
+    }
+    
+    println(output) // 변수에 담아 출력도 OK
+}
+```
+
+  
 
 [더 많은 코틀린 관련 정보](https://kotlinlang.org/docs/reference/)
 
