@@ -82,7 +82,7 @@ keywords:
 
 
 
-### 코틀린 웹 컴파일러(문법 스터디 용도)
+### 코틀린 웹 컴파일러(for study)
 
 - https://try.kotlinlang.org/
 
