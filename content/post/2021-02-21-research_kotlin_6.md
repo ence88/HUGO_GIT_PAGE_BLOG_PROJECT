@@ -90,30 +90,31 @@ fun main(args: Array<String>) {
 클래스의 멤버 변수 생성시 by 키워드를 통해 멤버 변수 set, get시 처리를 담당할 delegate 클래스를 전달 할 수 있으며, 이를 이용해 observable한 멤버 변수를 만들 수 있습니다.
 
 ```python
+import kotlin.properties.Delegates
+import kotlin.reflect.KProperty
+
+class Delegate {
+    operator fun getValue(thisRef: Any?, property: KProperty<*>): String{
+        return "$thisRef, thank you for delegating, ${property.name} to me"
+    }
+
+    operator fun setValue(thisRef: Any?, property: KProperty<*>, value: String): String{
+        return "$value, has been assigend to ${property.name} in $thisRef"
+    }
+}
+
 class NicePerson
 {
-    var name: String by MyObserver()
+    var name: String by Delegate()
 
-    var lazyValue:String by lazy{
+    val lazyValue:String by lazy {
         println("init!!!")
         "this Msg Will Inserted"
     }
 
-    var otherName: String by MyObserver.myObserverLambda("king"){
+    var otherName: String by Delegates.observable("king"){
         prop, old, new -> println("$old -> $new")
     }
-}
-
-fun main(args: Array<String>) {
-    var np = NicePerson()
-    np.name = "kkman"
-    var s = np.name
-    println(s)
-    println(np.lazyValue)
-    println(np.lazyValue)
-    println(np.lazyValue)
-    np.otherName = "kk222"
-    np.otherName = "hoho"
 }
 ```
 
