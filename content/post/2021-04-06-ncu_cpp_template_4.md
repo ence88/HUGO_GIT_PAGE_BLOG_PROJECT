@@ -1,5 +1,5 @@
 ---
-title: "C++ Template Programming - Template 특수[4]"
+title: "C++ Template Programming - Template 특수화[4]"
 date: 2021-04-06T18:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:
