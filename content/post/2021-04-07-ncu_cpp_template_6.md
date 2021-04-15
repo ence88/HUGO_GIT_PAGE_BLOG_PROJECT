@@ -1,6 +1,6 @@
 ---
 title: "C++ Template Programming - Variadic Template[6]"
-date: 2021-04-07T18:00:00+09:00
+date: 2021-04-08T18:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:
 - Language

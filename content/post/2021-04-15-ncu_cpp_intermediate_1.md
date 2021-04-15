@@ -8,8 +8,7 @@ categories:
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
 - C++
-- Modern C++
-- C++ Template
+- C++ Advanced
 keywords:
 - tech
 - developer
@@ -61,8 +60,8 @@ C++ 문법 뿐 아니라 C++ IDioms라고 알려져 있는 다양한 테크닉�
   - CL 컴파일러 사용하기 : VS 개발자 명령 프롬포트 -> cl filename.cpp -> 생성된 exe 파일 실행
 
 
-  
 
-  
+
+
 
 [더 많은 C++ 관련 정보](https://en.cppreference.com/w/)
