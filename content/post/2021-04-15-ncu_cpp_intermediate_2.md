@@ -1,6 +1,6 @@
 ---
 title: "C++ 고급 문법/테크닉 - C++ 중요 기본 문법 다시보기[2]"
-date: 2021-04-15T11:00:00+09:00
+date: 2021-04-15T10:50:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:
 - Language
