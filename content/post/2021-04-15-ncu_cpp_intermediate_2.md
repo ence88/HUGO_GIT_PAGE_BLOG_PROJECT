@@ -8,6 +8,7 @@ categories:
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
 - C++
+- Modern C++
 - C++ Advanced
 keywords:
 - tech
