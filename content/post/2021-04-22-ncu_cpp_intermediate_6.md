@@ -1,5 +1,5 @@
 ---
-title: "C++ 고급 문법/테크닉 - C++ auto / decltype type deduction[5]"
+title: "C++ 고급 문법/테크닉 - C++ auto / decltype type deduction[6]"
 date: 2021-04-22T02:30:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:
