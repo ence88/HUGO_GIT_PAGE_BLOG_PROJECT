@@ -1,5 +1,5 @@
 ---
-title: "C++ 고급 문법/테크닉 - Lambda expression[10]"
+title: "C++ 고급 문법/테크닉 - Lambda expression[9]"
 date: 2021-04-28T08:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:
