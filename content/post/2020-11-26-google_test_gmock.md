@@ -9,6 +9,7 @@ categories:
 tags:
 - C++
 - UnitTest
+- CI
 keywords:
 - tech
 - developer

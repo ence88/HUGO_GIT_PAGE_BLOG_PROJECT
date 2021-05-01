@@ -4,6 +4,7 @@ date: 2020-11-14T21:00:32+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
 - Common
+- Achitecture
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
 - Kafka
