@@ -4,10 +4,11 @@ date: 2021-02-01T20:14:52+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN, Book, Study, VOCA
 categories:
 - Study
-- VOCA
+- English
 #C++, Modern C++, DB, MsSQL, MySQL, Perforce, SVN, Git, GitHub, Management, Blog, Hugo, Architecture
 tags:
-- None
+- Study
+- English
 keywords:
 - tech
 - developer
