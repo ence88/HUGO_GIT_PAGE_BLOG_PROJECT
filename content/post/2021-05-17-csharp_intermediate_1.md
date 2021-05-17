@@ -24,7 +24,7 @@ keywords:
 #thumbnailImage: //example.com/image.jpgC스터디 내용작성 ㅇS이번 항이번 이버
 ---
 
-C# 언어와 .Net Framework 중급 이상의 기술 학습을 진행하는 시리즈 입니다.
+C# 언어와 .Net Framework의 중급 이상의 기술 학습을 진행하는 시리즈 입니다.
 
 <!--more-->
 
