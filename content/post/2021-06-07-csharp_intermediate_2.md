@@ -1,6 +1,6 @@
 ---
 title: "C# 중급 - 최신 문법[2]"
-date: 2021-05-17T09:00:00+09:00
+date: 2021-06-07T09:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:
 - Language
