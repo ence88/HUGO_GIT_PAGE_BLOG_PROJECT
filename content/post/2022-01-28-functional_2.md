@@ -33,6 +33,8 @@ abstract : 알아두면 좋은 코틀린 문법
 
 　
 
+{{< adsense >}}
+
 #### Data Class
 
 - hashCode, equals, toString, copy 멤버 함수 자동적 생성
