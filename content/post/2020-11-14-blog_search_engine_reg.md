@@ -52,7 +52,7 @@ enableRobotsTXT = true
 
   
 
-  
+{{< adsense >}}
 
 ### Google에 노출시키는 법
 
@@ -89,9 +89,9 @@ enableRobotsTXT = true
   
   - sitemap 제출할 때는 `sitemap.xml`만 입력하지만, RSS 제출할 때는 `http`부터 `xml` 파일명까지 통째로 입력해야 합니다.
   
-
   
-
+  
+  
   
 
 ### Daum에 노출시키는 법

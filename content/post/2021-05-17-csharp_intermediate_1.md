@@ -46,7 +46,8 @@ C# 언어와 .Net Framework의 중급 이상의 기술 학습을 진행하는 �
 - Visual Studio 2019 Community
   - https://visualstudio.microsoft.com/ko/
 
-  
+
+{{< adsense >}}
 
 #### 2. 프로젝트 생성
 

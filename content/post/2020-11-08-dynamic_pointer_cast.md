@@ -76,9 +76,7 @@ char* removedCastValue = const_cast<char*>(target);
 char* cStyle = (char*)target; // 이것도 OK이지만, C 스타일 캐스트는 지양
 ```
 
-
-
-
+{{< adsense >}}
 
 
 ### reinterpret_cast

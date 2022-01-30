@@ -33,7 +33,7 @@ keywords:
 
 이러한 기능이 없으면 가치에서 직접 future를 만드는 것은 사소한 일이 아닙니다. 먼저 promise를 생성 한 다음 promise를 설정하고 마지막으로 promise에서 future를 검색합니다. 이제 하나의 작업으로이 작업을 수행 할 수 있습니다.
 
-  
+{{< adsense >}}  
 
 ###### make_ready_future
 

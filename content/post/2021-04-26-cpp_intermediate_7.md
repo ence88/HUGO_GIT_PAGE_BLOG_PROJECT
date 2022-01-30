@@ -73,7 +73,7 @@ int main()
 }
 ```
 
-  
+{{< adsense >}}
 
 ### 임시객체와 참조
 
@@ -1120,5 +1120,4 @@ int main()
 ​    
 
 [더 많은 C++ 관련 정보](https://en.cppreference.com/w/)
-
 

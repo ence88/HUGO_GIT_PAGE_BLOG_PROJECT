@@ -66,10 +66,10 @@ int main()
 	case 0: break;
 	case 1: break;
 	}
-}
+}  
 ```
 
-  
+{{< adsense >}}
 
 ### static if
 

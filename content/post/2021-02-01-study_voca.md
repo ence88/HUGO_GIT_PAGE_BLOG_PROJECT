@@ -30,9 +30,7 @@ MD33000 수준(GRE) 어휘는 다른 포스팅에서 정리 예정
 
 <!--more-->
 
-  
-
-  
+{{< adsense >}}
 
 ### 수능 수준 (last update : 21-02-06, progressed : 16.9%)
 

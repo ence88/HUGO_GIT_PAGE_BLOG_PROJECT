@@ -126,7 +126,7 @@ class Program
 }
 ```
 
-
+{{< adsense >}}
 
 #### System.Range
 

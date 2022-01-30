@@ -52,7 +52,7 @@ inner join Bonus as b with(nolock) on b.id = sb.BonusID and b.BonusTypeID = 1111
 
   
 
-  
+{{< adsense >}}
 
 프로시저 내에서 사용되는 SELECT 문에서 WITH (NOLOCK)을 사용하기 위해서는 각 문장마다 삽입할 필요없이 프로시저 시작 부분에 다음 문장을 추가해 주면 됩니다.
 

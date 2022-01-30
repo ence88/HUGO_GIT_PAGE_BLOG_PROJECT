@@ -87,7 +87,7 @@ int main()
 }
 ```
 
-  
+{{< adsense >}}
 
 ### decltype
 

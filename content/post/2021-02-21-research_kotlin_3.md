@@ -50,7 +50,7 @@ var a = 64 // a는 int
 var b = 10f // b는 float
 ```
 
-
+{{< adsense >}}
 
 ### Basic Type
 

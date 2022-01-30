@@ -144,7 +144,8 @@ Warmest regards
 - 완전 공식적인 문서
 Respectfully / Respectfully yours
 
-  
+
+{{< adsense >}}
 
 ## Part 2 - 목적을 명확하게
 
@@ -655,5 +656,4 @@ Kindly contact me anytime.
 협력에 감사합니다. Thank you so much for your cooperation.
 도와주셔서 감사합니다. Thank you so much for your help.
 빠른 대처에 감사합니다. Thank you so much for your prompt response.
-
 

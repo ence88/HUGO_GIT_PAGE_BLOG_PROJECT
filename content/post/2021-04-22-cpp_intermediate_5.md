@@ -62,7 +62,7 @@ int main()
 }
 ```
 
-  
+{{< adsense >}}
 
 ### Member initializer 관련 유의사항
 

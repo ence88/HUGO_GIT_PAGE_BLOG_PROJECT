@@ -52,9 +52,7 @@ fun nullability()
 }
 ```
 
-  
-
-  
+{{< adsense >}}
 
 ### When Expression
 

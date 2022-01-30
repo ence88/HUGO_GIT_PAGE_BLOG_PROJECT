@@ -998,7 +998,7 @@ class Program
 }
 ```
 
-  
+{{< adsense >}}
 
 #### Deconstructor(C# 7.0)
 

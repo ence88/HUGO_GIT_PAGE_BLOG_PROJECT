@@ -102,7 +102,7 @@ int main()
 }
 ```
 
-
+{{< adsense >}}
 
 ### Template이 생성한 코드 확인
 

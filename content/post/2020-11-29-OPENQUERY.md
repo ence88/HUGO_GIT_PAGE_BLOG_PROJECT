@@ -41,6 +41,7 @@ EXEC sp_addlinkedserver
     @catalog = '[데이터 베이스명]'
 ```
 
+{{< adsense >}}
 
 \- MSSQL 연결계정 생성
 
@@ -59,8 +60,7 @@ EXEC sp_addlinkedsrvlogin
 SELECT * FROM master.dbo.sysservers WHERE srvname = '[연결된 서버별칭]'
 ```
 
-
-\- MSSQL 연결계정 확인
+- MSSQL 연결계정 확인
 
 ```mssql
 SELECT * FROM master.sys.linked_logins WHERE remote_name = '[사용자 이름]'

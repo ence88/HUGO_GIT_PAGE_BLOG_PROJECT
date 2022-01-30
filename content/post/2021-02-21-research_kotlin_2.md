@@ -42,7 +42,7 @@ keywords:
 
 - https://www.jetbrains.com/ko-kr/idea/download/#section=windows 다음 주소에서 개발 플랫폼에 맞는 Community 다운로드 및 설치
 
-
+{{< adsense >}}
 
 ### JDK 설치
 

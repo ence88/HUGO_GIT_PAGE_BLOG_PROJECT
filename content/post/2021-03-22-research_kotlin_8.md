@@ -71,7 +71,7 @@ fun main(args: Array<String>)
 }
 ```
 
-  
+{{< adsense >}}
 
 ### Function References
 

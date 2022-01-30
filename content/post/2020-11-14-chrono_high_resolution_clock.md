@@ -55,7 +55,7 @@ int main()
 
   
 
-  
+{{< adsense >}}
 
 I’ll explain a bit the code. `chrono` is the new header files that provides various time and clock related functionality of the new standard library. `high_resolution_clock` should be, according to the standard, the clock with the highest precision.
 

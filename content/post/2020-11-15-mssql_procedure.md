@@ -78,6 +78,7 @@ AS { [ BEGIN ] sql_statement [;] [ ...n ] [ END ] }
     [ EXECUTE AS Clause ]
 ```
 
+{{< adsense >}}
 
 #### 인수
 

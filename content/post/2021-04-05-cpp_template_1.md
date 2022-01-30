@@ -36,7 +36,7 @@ C++의 Template 기술은 C++ 에서 가장 신기하고, 재미있고, 깊이�
 4. CRTP, Thin Template, Policy-Base Design, rebind 등 Template 관련 디자인 기법을 배우게 됩니다.
 5. C++98/03 뿐 아니라 C++11/14 그리고 C++17/20에서 추가되는 최신 내용도 배우게 됩니다.
 
-
+{{< adsense >}}
 
 ### 실습환경
 

@@ -123,7 +123,7 @@ int main()
 }
 ```
 
-  
+{{< adsense >}}
 
 ### CRTP : Curiously Recurring Template Patten
 

@@ -34,7 +34,7 @@ shared_ptr 생성 시점에서 deleter를 전달 할 수 있고 이를 활용하
 
   
 
-  
+{{< adsense >}}
 
 shared_ptr의 생성자 함수는 크게 다음 세 가지 형태로 정의되어 있습니다.
 

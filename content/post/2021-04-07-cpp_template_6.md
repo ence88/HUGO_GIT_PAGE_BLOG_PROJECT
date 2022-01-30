@@ -93,7 +93,7 @@ int main()
 }
 ```
 
-  
+{{< adsense >}}
 
 ### Pack expansion
 

@@ -28,6 +28,8 @@ visual asist는 왠만하면 안쓰려고 하지만, 유용한 것은 지속적�
 
 <!--more-->
 
+{{< adsense >}}
+
 #### VisaulStudio 기본 단축키
 
 > Input 관련 규칙

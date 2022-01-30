@@ -62,7 +62,7 @@ fun ExampleSequence()
 }
 ```
 
-
+{{< adsense >}}
 
 ### Quantifiers (any, all, count, contains) : how many element fit a predicate
 

@@ -46,7 +46,7 @@ ANSI_NULLS 옵션이 OFF면 Equals(=)와 Not Equal(<>) 비교 연산자가 ISO �
 
 ANSI_NULLS 옵션이 OFF면 Equals(=)와 Not Equal(<>) 비교 연산자가 ISO 표준을 따르지 않습니다. WHERE *column_name* = **NULL**을 사용하는 SELECT 문은 *column_name*에 Null 값이 있는 행을 반환합니다. WHERE *column_name* <> **NULL**을 사용하는 SELECT 문은 열에 Null 이외의 값이 있는 행을 반환합니다. 또한 WHERE *column_name* <> *XYZ_value*를 사용하는 SELECT 문은 *XYZ_value*가 아니고 NULL이 아닌 모든 행을 반환합니다.
 
-
+{{< adsense >}}
 
 다음 표에서는 ANSI_NULLS 설정이 null과 null이 아닌 값을 사용하여 많은 부울 식의 결과에 어떤 영향을 미치는지를 보여 줍니다.
 

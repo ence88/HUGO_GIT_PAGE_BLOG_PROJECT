@@ -55,7 +55,7 @@ SELECT IDENT_CURRENT('테이블이름');
 
   
 
-  
+{{< adsense >}}
 
 # sequence
 

@@ -42,7 +42,7 @@ keywords:
 
 HBase, Kafka, Hadoop, kubernetes와 같은 인기 오픈소스 프로젝트에서도 분산 코디네이션 시스템을 구현하기 위해 주키퍼를 채택했습니다.
 
-
+{{< adsense >}}
 
 ### Zookeeper의 Architecture
 

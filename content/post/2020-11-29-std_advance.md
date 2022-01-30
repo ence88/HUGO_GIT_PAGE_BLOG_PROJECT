@@ -26,6 +26,10 @@ keywords:
 
 iterator를 원하는 위치로 옮길 수 있는 함수이다. 컨테이너의 iterator를 i번째 위치로 옮기고 싶을 때 사용할 수 있습니다.
 
+<!--more-->
+
+{{< adsense >}}
+
 표현식 std::advance(i, n)은 반복자 i를 거리 n만큼 증가시킵니다.
 
 - n > 0 이면,
@@ -35,8 +39,6 @@ iterator를 원하는 위치로 옮길 수 있는 함수이다. 컨테이너의 
 - n < 0 이면,
 
   --i를 n번 수행하는 것과 동등합니다.
-
-<!--more-->
 
 ```cpp
 std::vector<int> vec{1,2,3,4,5};

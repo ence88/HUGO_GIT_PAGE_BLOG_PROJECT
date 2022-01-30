@@ -119,7 +119,7 @@ class Program
 }
 ```
 
-  
+{{< adsense >}}
 
 ## Task
 

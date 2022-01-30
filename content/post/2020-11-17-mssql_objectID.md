@@ -53,7 +53,7 @@ OBJECT_ID ( '[ database_name . [ schema_name ] . | schema_name . ]
 
   
 
-  
+{{< adsense >}}
 
 ## 반환 형식
 

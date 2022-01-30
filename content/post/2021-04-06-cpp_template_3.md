@@ -63,7 +63,7 @@ int main()
 }
 ```
 
-
+{{< adsense >}}
 
 ### Generic copy constructor
 

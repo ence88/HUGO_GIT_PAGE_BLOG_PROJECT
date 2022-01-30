@@ -128,7 +128,7 @@ class Program
 }
 ```
 
-  
+{{< adsense >}}
 
 ## Stream Adapter
 

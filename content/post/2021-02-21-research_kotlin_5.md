@@ -54,7 +54,7 @@ fun HelloModule()
 }
 ```
 
-
+{{< adsense >}}
 
 ### Return Type and Arguments
 

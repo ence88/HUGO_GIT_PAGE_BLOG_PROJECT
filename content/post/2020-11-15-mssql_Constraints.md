@@ -69,9 +69,7 @@ MsSQL 테이블에서 데이터 무결성을 강제 적용하는 데 사용할 �
 - 자기 자신에 대한 외래 키 참조가 포함된 테이블은 계속 253개의 외래 키 참조만 사용할 수 있습니다.
 - columnstore 인덱스, 메모리 최적화 테이블, 스트레치 데이터베이스 또는 분할된 외래 키 테이블에 대해서는 현재 253개보다 많은 외래 키 참조를 포함할 수 없습니다.
 
-  
-
-  
+{{< adsense >}}
 
 ### FOREIGN KEY 제약 조건에 대한 인덱스
 
@@ -243,7 +241,7 @@ CREATE CLUSTERED INDEX CIX_TransactionID ON Production.TransactionHistoryArchive
 3. 다음 예를 복사하여 쿼리 창에 붙여 넣고 **실행**을 클릭합니다. 이 예에서는 먼저 PRIMARY KEY 제약 조건의 이름을 식별한 후 해당 제약 조건을 삭제합니다.
 
    ```sql
-USE AdventureWorks2012;  
+   USE AdventureWorks2012;  
    GO  
    -- Return the name of primary key.  
    SELECT name  
@@ -446,7 +444,7 @@ ALTER TABLE Sales.TempSalesReason
 3. 다음 예를 복사하여 쿼리 창에 붙여 넣고 **실행**을 클릭합니다.
 
    ```sql
-USE AdventureWorks2012;  
+   USE AdventureWorks2012;  
    GO  
    ALTER TABLE dbo.DocExe   
    DROP CONSTRAINT FK_Column_B;   
@@ -466,7 +464,7 @@ USE AdventureWorks2012;
 3. 다음 예를 복사하여 쿼리 창에 붙여 넣고 **실행**을 클릭합니다.
 
    ```sql
-USE AdventureWorks2012;  
+   USE AdventureWorks2012;  
    GO  
    ALTER TABLE Purchasing.PurchaseOrderHeader  
    NOCHECK CONSTRAINT FK_PurchaseOrderHeader_Employee_EmployeeID;  

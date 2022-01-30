@@ -126,7 +126,7 @@ int main()
 }
 ```
 
-  
+{{< adsense >}}
 
 ### Specialization 주의사항
 

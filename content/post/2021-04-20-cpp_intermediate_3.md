@@ -106,6 +106,8 @@ int main()
 
     
 
+{{< adsense >}}
+
 ### Static_assert
 
 - assert : 실행 시간에 표현식 조사

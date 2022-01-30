@@ -46,7 +46,7 @@ keywords:
 
   
 
-  
+{{< adsense >}}
 
 ### Assertion
 
