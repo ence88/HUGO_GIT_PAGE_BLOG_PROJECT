@@ -1,5 +1,5 @@
 ---
-title: "C++ 고급 문법/테크닉 - C++ 객체 초기화[5]"
+title: "C++ 고급 문법 테크닉 - C++ 객체 초기화[5]"
 date: 2021-04-22T00:30:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:

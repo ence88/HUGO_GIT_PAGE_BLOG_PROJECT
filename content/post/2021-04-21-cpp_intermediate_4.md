@@ -1,5 +1,5 @@
 ---
-title: "C++ 고급 문법/테크닉 - C++ 17 기본 문법[4]"
+title: "C++ 고급 문법 테크닉 - C++ 17 기본 문법[4]"
 date: 2021-04-21T09:50:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:

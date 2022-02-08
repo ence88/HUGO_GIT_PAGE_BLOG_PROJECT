@@ -1,5 +1,5 @@
 ---
-title: "C++ 고급 문법/테크닉 - rvalue와 lvalue, move semantics[7]"
+title: "C++ 고급 문법 테크닉 - rvalue와 lvalue, move semantics[7]"
 date: 2021-04-26T09:30:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:
