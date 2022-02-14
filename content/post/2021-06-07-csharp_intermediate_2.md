@@ -1,5 +1,5 @@
 ---
-title: "C# 중급 - C#의 원리[2]"
+title: "Csharp 씨샵 중급 - Csharp의 원리[2]"
 date: 2021-06-07T09:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:

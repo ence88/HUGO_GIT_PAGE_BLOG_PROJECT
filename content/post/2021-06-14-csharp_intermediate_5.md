@@ -1,5 +1,5 @@
 ---
-title: "C# 중급 - FRAMEWORK[5]"
+title: "Csharp 씨샵 중급 - FRAMEWORK[5]"
 date: 2021-06-14T11:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:

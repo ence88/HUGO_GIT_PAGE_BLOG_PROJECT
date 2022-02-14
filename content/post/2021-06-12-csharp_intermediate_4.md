@@ -1,5 +1,5 @@
 ---
-title: "C# 중급 - Concurrency[4]"
+title: "Csharp 씨샵 중급 - Concurrency[4]"
 date: 2021-06-12T11:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:

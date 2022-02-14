@@ -1,5 +1,5 @@
 ---
-title: "#define 매크로, const와 차이점, 유의 사항"
+title: "define 매크로, const와 차이점, 유의 사항"
 date: 2020-11-08T23:10:09+09:00
 #Dev, C++
 categories:

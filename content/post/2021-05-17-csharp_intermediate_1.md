@@ -1,5 +1,5 @@
 ---
-title: "C# 중급 - Orientation[1]"
+title: "Csharp 씨샵 중급 - Orientation[1]"
 date: 2021-05-17T09:00:00+09:00
 #Language, C++, DB, MsSQL, MySQL, Common, SCM, Perforce, Blog, SVN
 categories:

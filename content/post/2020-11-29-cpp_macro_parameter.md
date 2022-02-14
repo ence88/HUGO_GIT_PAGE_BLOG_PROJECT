@@ -1,5 +1,5 @@
 ---
-title: "함수처럼 매개변수를 갖는 매크로 및 매크로에서 사용되는 연산자"
+title: "함수처럼 매개변수를 갖는 매크로"
 date: 2020-11-29T21:29:12+09:00
 #Dev, C++, DB, MsSQL, MySQL, Common, Perforce, Blog
 categories:
